@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="TBL">
+    <meta name="keywords" content="TBL">
+    <meta name="author" content="Qubit Solution Lab">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="frontend/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="frontend/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frontend/css/video-js.css" rel="stylesheet"/>
+    <link href="frontend/css/style.css" rel="stylesheet">
+    <link href="frontend/css/style2.css" rel="stylesheet">
+    <link href="frontend/css/mobile.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="frontend/css/timeline.css"/>
+    <link rel="stylesheet" href="frontend/css/aos.css"/>
+
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="frontend/css/swiper-bundle.min.css"/>
+    <script src="frontend/js/swiper-bundle.min.js"></script>
+
+    <script src="frontend/js/angular.min.js"></script>
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light <!--fixed-top-->" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="frontend/img/Pepsi_Logo_2014.png" height="35px"/>
+        </a>
+        <button class="navbar-toggler collapsed custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                       data-bs-auto-close="outside">About</a>
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>About Us</h5>
+                                        <p>Transcom Beverage Ltd
+                                            (TBL) is the exclusive
+                                            PepsiCo Franchise for
+                                            Bangladesh
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--     <h5>About</h5>-->
+
+                                        <ul>
+                                            <li><a class="child-item" href="/our-history"> Our History</a></li>
+                                            <li><a class="child-item" href="/mission-vision-values"> Vision, Mission &
+                                                Values</a></li>
+                                            <li><a class="child-item" href="/reward-recognition"> Reward and
+                                                Recognition</a></li>
+                                            <li><a class="child-item" href="/leadership"> Leadership</a></li>
+                                            <li><a class="child-item" href="/corporate-social-responsibility"> Corporate
+                                                social
+                                                Responsibility</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                       data-bs-auto-close="outside">Brands</a>
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>Brands</h5>
+                                        <p>Our entire beverage range is designed to give our consumers more and add
+                                            refreshment to their lives.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--   <h5>About</h5>-->
+
+                                        <ul>
+                                            <li><a class="child-item" href="/our-products"> Our Products</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                       data-bs-auto-close="outside"> Sustainability</a>
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 style="font-size: 30px"> Sustainability</h5>
+                                        <p>We’re changing how we source ingredients, manufacture and sell our products,
+                                            and how we inspire people through our brands.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--  <h5>Create Care & Sustain</h5>-->
+
+                                        <ul>
+                                            <li><a class="child-item" href="/care-sustain"> Create Care & Sustain</a>
+                                            </li>
+                                            <li><a class="child-item" href="/reuse"> Reuse, Recycle and Reduce</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                       data-bs-auto-close="outside"> Careers</a>
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5> Careers</h5>
+                                        <p>If you are planning to make an impact through crafting brands and choices
+                                            people love, we have exciting news for you! </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--    <h5>Create Care & Sustain</h5>-->
+
+                                        <ul>
+                                            <li><a class="child-item" href="/career">Careers Hub</a></li>
+                                            <li><a class="child-item" href="/cv-bank">CV Bank</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--  <li class="nav-item">
+                <a class="nav-link" href="/career">Careers</a>
+            </li>-->
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                       data-bs-auto-close="outside"> News</a>
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5> News</h5>
+                                        <p>Check out the latest news and join the conversation on our social media
+                                            channels</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--   <h5> News</h5>-->
+
+                                        <ul>
+                                            <li><a class="child-item" href="/latest-stories"> Latest Stories</a></li>
+                                            <li><a class="child-item" href="/tvc"> TVC</a></li>
+                                            <li><a class="child-item" href="/news"> News</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Contact</a>
+                </li>
+                <!--    <li class="nav-item">
+
+              <a href="/checkout">
+                  <span class="cart-number" style="background: red" ng-cloak="" ng-bind="total_item">0</span>
+                  <img src="frontend/img/icon/shopping-cart.svg" height="30">
+              </a>
+
+          </li>-->
+
+
+            </ul>
+            <form class="d-flex ms-auto">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+
+                        <a class="nav-link search-btn" href="#"> <img src="frontend/img/search_icon.svg"> Search </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+</nav>
+<!-- END Mega Menu HTML -->
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+    <div class="mobile-nav-header">
+        <a class="mobile-nav-title" href="/">
+            <img src="frontend/img/logo.png" alt="logo">
+        </a>
+        <div class="btns">
+
+
+            <a id="nav-open" href="#">
+                <!-- <img src="frontend/img/collpase_icon.svg" alt=""> -->
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+    <div class="mobile-nav-content">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/">Home</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/about">About</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/our-products">Our Products</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/care-sustain">Create Care & Sustain</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/reuse">Reuse, Recycle and Reduce</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/career">Careers</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/latest-stories">Latest Stories</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/tvc">TVC</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/news">News</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Mobile Nav -->
+
+<!-- New Search modal -->
+<div id="search-modal-dialog" class="search-modal">
+    <button class="search-close" title="Close search-modal">x</button>
+    <div class="search-modal-content">
+        <form action="#">
+            <input type="text" placeholder="Search Anything" name="search">
+            <button type="submit"><img src="frontend/img/search_icon.svg" alt=""></button>
+        </form>
+    </div>
+</div>
+
+<!-- Search Modal End
+<button id="modal-close-btn"><img src="frontend/img/close_icon.svg" alt="close"></button>
+<input type="text" placeholder="testing....">-->
+
+
+<!--<section class=" section">
+    <div class="page-title-bgs ">
+
+        <div class="container">
+            <div class="page-title-content">
+                <h4>Our History</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eu lectus nibh est. Nec, turpis
+                    magna nulla est
+                    neque, suscipit. Diam, donec et dolor nunc. Gravida purus tellus morbi at in.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<section class="section page-title-bg" style="
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('frontend/img/background/history.jpg');">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="page-title-content">
+                <h4>Our History </h4>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p style="color: #939393"> Two decades of creating smiles for millions of people with an
+                            inspiring experience and breakthrough business transformation, adding more to lives through
+                            sustained growth, celebrating the great taste by refreshing minds and playing to inspire
+                            like none other.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container history-container">
+
+        <section id="cd-timeline" class="cd-container cssanimations">
+            <!-- single timeline event -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-end">2000</h2>
+                    <img src="frontend/img/history/history-timeline.png" alt="timeline"
+                         class="timeline-img w-100"/>
+                    <p>Transcom Beverages Ltd (TBL) starts its journey as the Exclusive PepsiCo. Franchisee for
+                        Bangladesh region.
+                    </p>
+                    <p>
+                        The journey begins with two plants, one located in The Tejgaon Industrial area with 400 BPM
+                        (bottle per minute) and one in Chittagong with 400 BPM (bottle per minute). Initially these
+                        plants started off with GRB (Glass return bottle) and in the following year pet line was
+                        added in the production line.
+                    </p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content right-child" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-start">2004</h2>
+                    <img src="frontend/img/history/3.jpg" alt="timeline"
+                         class="timeline-img w-100"/>
+                    <p>In 2004, The Tejgaon plant was shifted to Konabari in its own acquired land and rebranded
+                        itself as Dhaka plant. This new plant was equipped with 630 BPM line and shrink film
+                        packaging.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-end">2005</h2>
+                    <img src="frontend/img/reward/1.jpg" alt="timeline" class="timeline-img w-100"/>
+                    <p>TBL has achieved subsequently the Pepsico prestigious award “Bottler of the year” 9 times in
+                        the year of 2005, 2008-2014, and 2016. Huskey line were installed in Dhaka plant.</p>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content right-child" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-start">2009</h2>
+                    <img src="frontend/img/history/2009.png" alt="timeline" class="timeline-img w-100"/>
+                    <p>A transition from 400 BPM to 1430 BPM to increase production capacity. Received International
+                        Bottler of the year in 2009.</p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-end">2013</h2>
+                    <img src="frontend/img/history/2013.png" alt="timeline" class="timeline-img w-100"/>
+                    <p>Aquafina production line installed in Dhaka plant. </p>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-start right-child">2014</h2>
+                    <img src="frontend/img/history/history-timeline.png" alt="timeline"
+                         class="timeline-img w-100"/>
+                    <p>TBL acquired a plant from Global beverages and started Bagher Bazar plant operation in order
+                        to supply the growing demand for the beverages industry.
+                    </p>
+                    <p>CAN line and PET line of Slice installed at Bagher Bazar plant.</p>
+                    <p>400 BPM PET line were installed at Chittagong plant. </p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-end">2015</h2>
+                    <img src="frontend/img/history/2015.png" alt="timeline" class="timeline-img w-100"/>
+                    <p>7up achieved best beverage brand 10 times in a row by the brand forum.  </p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+
+                </div>
+                <div class="cd-timeline-content right-child" data-aos="fade-up"
+                     data-aos-delay="50">
+                    <h2 class="title float-start">2016-2021</h2>
+                    <img src="frontend/img/history/2020.png" alt="timeline"
+                         class="timeline-img w-100"/>
+                    <p>Received International Bottler of the year in 2016. Total capacity enhanced to 6660 in three plants.</p>
+                    <p>Additional 13 bigha land acquired to extend with Dhaka plant.</p>
+                    <p>Achieved AIB Gold award in 2021.</p>
+                    <p>Best Employer Brand 2015 in Asia Region.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</section>
+<section class="section blog theme-bg-light-color">
+    <div class="container">
+        <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+            <h5 class="title text-center"> Also Read</h5>
+        </div>
+
+        <div class="row ">
+
+            <div class="col-md-3 " data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div class="card-body blog-card aos-init"
+                         style=" background: linear-gradient(0deg, rgba(0, 100, 167, 0.4), rgba(0, 100, 167, 0.4)), url(frontend/img/blog/11.png), #FFFFFF;"
+                    >
+
+                        <h4>Our History</h4>
+
+                        <a href="/our-history" class="btn btn-outline-borderless">Explore <img src="frontend/img/icon/arrow.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div class="card-body blog-card aos-init"
+                         style=" background: linear-gradient(0deg, rgba(0, 100, 167, 0.4), rgba(0, 100, 167, 0.4)), url(frontend/img/blog/2.jpg), #FFFFFF;"
+                    >
+
+                        <h4>Reward &amp; Recognition</h4>
+
+                        <a href="/reward-recognition" class="btn btn-outline-borderless">Explore <img src="frontend/img/icon/arrow.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 " data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div class="card-body blog-card aos-init"
+                         style=" background: linear-gradient(0deg, rgba(0, 100, 167, 0.4), rgba(0, 100, 167, 0.4)), url(frontend/img/blog/3.png), #FFFFFF;"
+                    >
+
+                        <h4>TBL Leadership</h4>
+
+                        <a href="/leadership" class="btn btn-outline-borderless">Explore <img src="frontend/img/icon/arrow.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div class="card-body blog-card aos-init"
+                         style=" background: linear-gradient(0deg, rgba(0, 100, 167, 0.4), rgba(0, 100, 167, 0.4)), url(frontend/img/blog/4.png), #FFFFFF;"
+                    >
+
+                        <h4>Corporate Social Responsibility</h4>
+
+                        <a href="/corporate-social-responsibility" class="btn btn-outline-borderless">Explore <img src="frontend/img/icon/arrow.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+
+
+
+<section class="footer section theme-bg-light " >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <div class="footer-about">
+                    <h4>About the company</h4>
+                    <p>
+                        Transcom Beverage Ltd <br> (TBL) is the exclusive <br> PepsiCo Franchise for <br> Bangladesh</p>
+
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><img src="frontend/img/icon/twitter.png"></li>
+                        <li class="list-inline-item"><img src="frontend/img/icon/facebook.png"></li>
+                        <li class="list-inline-item"><img src="frontend/img/icon/instagram.png"></li>
+                        <li class="list-inline-item"><img src="frontend/img/icon/linkedin.png"></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="footer-end">
+                    <h4>About Us</h4>
+                    <ul class="list-inline">
+                        <li><a href="/our-history"> Our History</a></li>
+                        <li><a href="/mission-vision-values"> Vision, Mission & Values</a></li>
+                        <li><a href="/reward-recognition"> Reward and Recognition</a></li>
+                        <li><a href="/leadership"> Leadership</a></li>
+                        <li><a href="/corporate-social-responsibility"> Corporate social
+                            Responsibility</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="footer-end">
+                    <h4>Sustainability </h4>
+                    <ul class="list-inline">
+                        <li><a href="/care-sustain"> Create Care & Sustain</a></li>
+                        <li><a href="/reuse"> Reuse, Recycle and Reduce</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="footer-end">
+                    <h4>Others </h4>
+                    <ul class="list-inline">
+                        <li><a href="/latest-stories"> Latest Stories</a></li>
+                        <li><a href="/tvc"> TVC</a></li>
+                        <li><a href="/news"> News</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="frontend/js/jquery-3.6.0.min.js"></script>
+<script src="frontend/js/bootstrap.min.js"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="frontend/js/popper.min.js"></script>
+
+<!--<script src="frontend/js/video.min.js"></script>
+<script src="frontend/js/Youtube.min.js"></script>-->
+<script src="frontend/js/aos.js"></script>
+
+
+<script src="frontend/js/main.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+@media only screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .font-small{
+        font-size: small;
+    }
+    .footer-end {
+        float: left !important;
+    }
+    .hero-section {
+        margin-top: -21px;
+    }
+    .linked {
+        margin-top: 30px;
+    }
+    .career-card {
+        width: 256px;
+        height: 394px;
+        margin: 37px 55px;
+    }
+    .vertical-line {
+        height: 120px;
+    }
+    .career-card h4 {
+        font-size: 26px;
+    }
+    .slide-size {
+        width: 95px !important;
+    }
+    #cd-timeline {
+        width: 690px !important;
+    }
+
+}
