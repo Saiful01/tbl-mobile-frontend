@@ -62,4 +62,112 @@
   .hide-on-mobile {
     display: none;
   }
+  .values-area .carousel-item {
+    height: auto;
+    padding-top: 54px;
+    background-color: unset;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .hide-on-desktop {
+    display: block;
+  }
+  .values-area .container {
+    padding: 0px;
+  }
+  .values-area .carousel-caption {
+    top: 110px;
+  }
+  .values-area .carousel-caption .details p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+
+    color: #ffffff;
+  }
+  .values-area .carousel-caption .details {
+    width: 100%;
+  }
+  .btn-learn-more2 {
+    bottom: -500px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 760px;
+  }
+  .carousel-control-prev {
+    left: 340px;
+  }
+  .mobile-nav .mobile-nav-header {
+    background-color: transparent;
+    backdrop-filter: unset;
+  }
+  .hero-swipe {
+    height: auto !important;
+  }
+  .hero-section .carousel-caption p {
+    display: block;
+  }
+  .hero-swipe .carousel-caption {
+    right: unset;
+  }
+  .hero-section .carousel-caption {
+    top: 100px;
+  }
+  .hero-section .carousel-caption h4 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 118%;
+    color: #ffffff;
+  }
+  .world {
+    height: 42px;
+  }
+  .hero-section .carousel-caption h6 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+
+    color: #ffffff;
+  }
+  .hero-section .carousel-caption p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+  .hero-swipe .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: #ffffff;
+    opacity: 1;
+  }
+  .hero-swipe .swiper-pagination-bullet-active {
+    width: 34px;
+    height: 7px;
+    background: #ffffff !important;
+    border-radius: 14px;
+  }
+  .hero-swipe .swiper-pagination {
+    bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel-control-prev {
+    left: 310px;
+  }
+  .btn-learn-more2 {
+    bottom: -418px;
+  }
 }

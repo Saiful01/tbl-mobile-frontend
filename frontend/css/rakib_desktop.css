@@ -1,3 +1,6 @@
-.mobile-product-slider{
-    display: none;
+.mobile-product-slider {
+  display: none;
+}
+.hide-on-desktop {
+  display: none;
 }

@@ -1,221 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="description" content="TBL">
-    <meta name="keywords" content="TBL">
-    <meta name="author" content="Qubit Solution Lab">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="frontend/img/favicon.png">
+    <meta charset="utf-8" />
+    <meta name="description" content="TBL" />
+    <meta name="keywords" content="TBL" />
+    <meta name="author" content="Qubit Solution Lab" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="frontend/img/favicon.png" />
 
     <!-- Bootstrap CSS -->
-    <link href="frontend/css/bootstrap.min.css" rel="stylesheet">
-    <link href="frontend/css/video-js.css" rel="stylesheet">
-    <link href="frontend/css/style.css" rel="stylesheet">
-    <link href="frontend/css/style2.css" rel="stylesheet">
-    <link href="frontend/css/mobile.css" rel="stylesheet">
+    <link href="frontend/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="frontend/css/video-js.css" rel="stylesheet" />
+    <link href="frontend/css/style.css" rel="stylesheet" />
+    <link href="frontend/css/style2.css" rel="stylesheet" />
+    <link href="frontend/css/mobile.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="frontend/css/aos.css">
+    <link rel="stylesheet" href="frontend/css/aos.css" />
 
+    <title>TBL Website</title>
 
-
-
-    <title>TBL Website </title>
-
-
-    <link rel="stylesheet" href="frontend/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="frontend/css/swiper-bundle.min.css" />
     <script src="frontend/js/swiper-bundle.min.js"></script>
 
     <style>
-        .hero-swipe {
-            width: 100%;
-            height: 100vh;
-        }
+      .hero-swipe {
+        width: 100%;
+        height: 100vh;
+      }
 
-        .sustainability-row {
-            background: linear-gradient(0deg, rgba(0, 100, 167, 0.4), rgba(0, 100, 167, 0.4)), url(frontend/img/blog/life1.jpg), #FFFFFF;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
+      .sustainability-row {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 100, 167, 0.4),
+            rgba(0, 100, 167, 0.4)
+          ),
+          url(frontend/img/blog/life1.jpg), #ffffff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
 
-        .world {
-            height: 62px;
-            margin-bottom: 9px;
-        }
-
+      .world {
+        height: 62px;
+        margin-bottom: 9px;
+      }
     </style>
     <link rel="stylesheet" href="./frontend/css/rakib_mobile.css" />
-
-</head>
-<body >
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light <!--fixed-top-->" aria-label="Main navigation">
-    <div class="container">
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light <!--fixed-top-->"
+      aria-label="Main navigation"
+    >
+      <div class="container">
         <a class="navbar-brand" href="">
-            <img src="frontend/img/Pepsi_Logo_2014.png" height="35px">
+          <img src="frontend/img/Pepsi_Logo_2014.png" height="35px" />
         </a>
-        <button class="navbar-toggler collapsed custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar-content">
-            <div class="hamburger-toggle">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <button
+          class="navbar-toggler collapsed custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+        >
+          <div class="hamburger-toggle">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+          </div>
         </button>
         <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown dropdown-mega position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >About</a
+              >
+              <div class="dropdown-menu shadow">
+                <div class="mega-content px-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 col-md-3 py-4">
+                        <h5>About Us</h5>
+                        <p>
+                          Transcom Beverage Ltd (TBL) is the exclusive PepsiCo
+                          Franchise for Bangladesh
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 py-4">
+                        {{--
+                        <h5>About</h5>
+                        --}}
 
-                <li class="nav-item dropdown dropdown-mega position-static">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       data-bs-auto-close="outside">About</a>
-                    <div class="dropdown-menu shadow">
-                        <div class="mega-content px-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5>About Us</h5>
-                                        <p>Transcom Beverage Ltd
-                                            (TBL) is the exclusive
-                                            PepsiCo Franchise for
-                                            Bangladesh
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                                        {{--  <h5>About</h5>--}}
-
-                                        <ul>
-                                            <li><a class="child-item" href="our-history"> Our History</a></li>
-                                            <li><a class="child-item" href="mission-vision-values"> Vision, Mission &
-                                                Values</a></li>
-                                            <li><a class="child-item" href="reward-recognition"> Reward and
-                                                Recognition</a></li>
-                                            <li><a class="child-item" href="leadership"> Leadership</a></li>
-                                            <li><a class="child-item" href="corporate-social-responsibility"> Corporate
-                                                social
-                                                Responsibility</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                          <li>
+                            <a class="child-item" href="our-history">
+                              Our History</a
+                            >
+                          </li>
+                          <li>
+                            <a class="child-item" href="mission-vision-values">
+                              Vision, Mission & Values</a
+                            >
+                          </li>
+                          <li>
+                            <a class="child-item" href="reward-recognition">
+                              Reward and Recognition</a
+                            >
+                          </li>
+                          <li>
+                            <a class="child-item" href="leadership">
+                              Leadership</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="child-item"
+                              href="corporate-social-responsibility"
+                            >
+                              Corporate social Responsibility</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </li>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                <li class="nav-item dropdown dropdown-mega position-static">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       data-bs-auto-close="outside">Brands</a>
-                    <div class="dropdown-menu shadow">
-                        <div class="mega-content px-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5>Brands</h5>
-                                        <p>Our entire beverage range is designed to give our consumers more and add refreshment to their lives.</p>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                                      <!--  <h5>About</h5>-->
+            <li class="nav-item dropdown dropdown-mega position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Brands</a
+              >
+              <div class="dropdown-menu shadow">
+                <div class="mega-content px-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 col-md-3 py-4">
+                        <h5>Brands</h5>
+                        <p>
+                          Our entire beverage range is designed to give our
+                          consumers more and add refreshment to their lives.
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 py-4">
+                        <!--  <h5>About</h5>-->
 
-                                        <ul>
-                                            <li><a class="child-item" href="our-products"> Our Products</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                          <li>
+                            <a class="child-item" href="our-products">
+                              Our Products</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </li>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                <li class="nav-item dropdown dropdown-mega position-static">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       data-bs-auto-close="outside"> Sustainability</a>
-                    <div class="dropdown-menu shadow">
-                        <div class="mega-content px-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5 style="font-size: 30px"> Sustainability</h5>
-                                        <p>We’re changing how we source ingredients, manufacture and sell our products, and how we inspire people through our brands.</p>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                                         <!-- <h5>Create Care & Sustain</h5>-->
+            <li class="nav-item dropdown dropdown-mega position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                Sustainability</a
+              >
+              <div class="dropdown-menu shadow">
+                <div class="mega-content px-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 col-md-3 py-4">
+                        <h5 style="font-size: 30px">Sustainability</h5>
+                        <p>
+                          We’re changing how we source ingredients, manufacture
+                          and sell our products, and how we inspire people
+                          through our brands.
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 py-4">
+                        <!-- <h5>Create Care & Sustain</h5>-->
 
-                                        <ul>
-                                            <li><a class="child-item" href="care-sustain"> Create Care & Sustain</a>
-                                            </li>
-                                            <li><a class="child-item" href="reuse"> Reuse, Recycle and Reduce</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                          <li>
+                            <a class="child-item" href="care-sustain">
+                              Create Care & Sustain</a
+                            >
+                          </li>
+                          <li>
+                            <a class="child-item" href="reuse">
+                              Reuse, Recycle and Reduce</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </li>
-                <li class="nav-item dropdown dropdown-mega position-static">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       data-bs-auto-close="outside"> Careers</a>
-                    <div class="dropdown-menu shadow">
-                        <div class="mega-content px-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5> Careers</h5>
-                                        <p>If you are planning to make an impact through crafting brands and choices people love, we have exciting news for you! </p>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                                        <!-- <h5>Create Care & Sustain</h5>-->
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-mega position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                Careers</a
+              >
+              <div class="dropdown-menu shadow">
+                <div class="mega-content px-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 col-md-3 py-4">
+                        <h5>Careers</h5>
+                        <p>
+                          If you are planning to make an impact through crafting
+                          brands and choices people love, we have exciting news
+                          for you!
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 py-4">
+                        <!-- <h5>Create Care & Sustain</h5>-->
 
-                                        <ul>
-                                            <li><a class="child-item" href="career">Careers Hub</a></li>
-                                            <li><a class="child-item" href="cv-bank">CV Bank</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                          <li>
+                            <a class="child-item" href="career">Careers Hub</a>
+                          </li>
+                          <li>
+                            <a class="child-item" href="cv-bank">CV Bank</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </li>
-               <!--  <li class="nav-item">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--  <li class="nav-item">
                 <a class="nav-link" href="career">Careers</a>
             </li>-->
-                <li class="nav-item dropdown dropdown-mega position-static">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       data-bs-auto-close="outside"> News</a>
-                    <div class="dropdown-menu shadow">
-                        <div class="mega-content px-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5> News</h5>
-                                        <p>Check out the latest news and join the conversation on our social media channels</p>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                                       <!--   <h5> News</h5>-->
+            <li class="nav-item dropdown dropdown-mega position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                News</a
+              >
+              <div class="dropdown-menu shadow">
+                <div class="mega-content px-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 col-md-3 py-4">
+                        <h5>News</h5>
+                        <p>
+                          Check out the latest news and join the conversation on
+                          our social media channels
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 py-4">
+                        <!--   <h5> News</h5>-->
 
-                                        <ul>
-                                            <li><a class="child-item" href="latest-stories"> Latest Stories</a></li>
-                                            <li><a class="child-item" href="tvc"> TVC</a></li>
-                                            <li><a class="child-item" href="news"> News</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                          <li>
+                            <a class="child-item" href="latest-stories">
+                              Latest Stories</a
+                            >
+                          </li>
+                          <li><a class="child-item" href="tvc"> TVC</a></li>
+                          <li><a class="child-item" href="news"> News</a></li>
+                        </ul>
+                      </div>
                     </div>
-                </li>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contacts">Contact</a>
-                </li>
-                 <!--   <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="contacts">Contact</a>
+            </li>
+            <!--   <li class="nav-item">
 
                 <a href="checkout">
                     <span class="cart-number" style="background: red" ng-cloak="" ng-bind="total_item">0</span>
@@ -223,252 +303,269 @@
                 </a>
 
             </li>-->
-
-
+          </ul>
+          <form class="d-flex ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link search-btn" href="#">
+                  <img src="frontend/img/search_icon.svg" /> Search
+                </a>
+              </li>
             </ul>
-            <form class="d-flex ms-auto">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-
-                        <a class="nav-link search-btn" href="#"> <img src="frontend/img/search_icon.svg"> Search </a>
-                    </li>
-                </ul>
-            </form>
-
+          </form>
         </div>
-    </div>
-</nav>
-<!-- END Mega Menu HTML -->
+      </div>
+    </nav>
+    <!-- END Mega Menu HTML -->
 
-<!-- Mobile Nav -->
-<nav class="mobile-nav">
-    <div class="mobile-nav-header">
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+      <div class="mobile-nav-header">
         <a class="mobile-nav-title" href="">
-            <img src="frontend/img/logo.png" alt="logo">
+          <img src="frontend/img/logo.png" alt="logo" />
         </a>
         <div class="btns">
-
-
-            <a id="nav-open" href="#">
-                <!-- <img src="frontend/img/collpase_icon.svg" alt=""> -->
-                <div id="nav-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
-
+          <a id="nav-open" href="#">
+            <!-- <img src="frontend/img/collpase_icon.svg" alt=""> -->
+            <div id="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
         </div>
-
-    </div>
-    <div class="mobile-nav-content">
+      </div>
+      <div class="mobile-nav-content">
         <ul class="mobile-nav-list">
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="">Home</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="about">About</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="our-products">Our Products</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="care-sustain">Create Care & Sustain</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="reuse">Reuse, Recycle and Reduce</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="career">Careers</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="latest-stories">Latest Stories</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="tvc">TVC</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="news">News</a>
-            </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="">Home</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="about">About</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="our-products">Our Products</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="care-sustain"
+              >Create Care & Sustain</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="reuse"
+              >Reuse, Recycle and Reduce</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="career">Careers</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="latest-stories">Latest Stories</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="tvc">TVC</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="news">News</a>
+          </li>
         </ul>
-    </div>
-</nav>
-<!-- Mobile Nav -->
+      </div>
+    </nav>
+    <!-- Mobile Nav -->
 
-
-<!-- New Search modal -->
-<div id="search-modal-dialog" class="search-modal">
-    <button class="search-close" title="Close search-modal">x</button>
-    <div class="search-modal-content">
+    <!-- New Search modal -->
+    <div id="search-modal-dialog" class="search-modal">
+      <button class="search-close" title="Close search-modal">x</button>
+      <div class="search-modal-content">
         <form action="#">
-            <input type="text" placeholder="Search Anything" name="search">
-            <button type="submit"><img src="frontend/img/search_icon.svg" alt=""></button>
+          <input type="text" placeholder="Search Anything" name="search" />
+          <button type="submit">
+            <img src="frontend/img/search_icon.svg" alt="" />
+          </button>
         </form>
+      </div>
     </div>
-</div>
 
-<!--<button id="modal-close-btn"><img src="frontend/img/close_icon.svg" alt="close"></button>
+    <!--<button id="modal-close-btn"><img src="frontend/img/close_icon.svg" alt="close"></button>
 <input type="text" placeholder="testing....">-->
 
-<div class="hero-section">
-
-
-    <div class="swiper hero-swipe">
+    <div class="hero-section">
+      <div class="swiper hero-swipe">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide" style="">
-
-
-                <div class="carousel-caption" data-aos="fade-up"
-                     data-aos-delay="50">
-                    <div class="container">
-                        <h4>BRINGING THE W<span><img class="world" src="frontend/img/icon/pepsi.svg"></span>RLD</h4>
-                        <h6>BEST TASTE OF BEVERAGE</h6>
-                        <p>Why settle for average, when you can get the World Best Taste of beverage? With more fizz and<br>
-                            refreshing taste, our beverages are here to rock your world like none other! </p>
-                    </div>
-                </div>
-
-                <img src="frontend/img/slider/slider3.jpg" class="w-100">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div
+              class="carousel-caption"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="container">
+                <h4>
+                  BRINGING THE W<span
+                    ><img
+                      class="world"
+                      src="frontend/img/icon/pepsi.svg" /></span
+                  >RLD
+                </h4>
+                <h6>BEST TASTE OF BEVERAGE</h6>
+                <p>
+                  Why settle for average, when you can get the World Best Taste
+                  of beverage? With more fizz and refreshing taste, our
+                  beverages are here to rock your world like none other!
+                </p>
+              </div>
             </div>
 
-            <div class="swiper-slide" style="">
-                <div class="carousel-caption" data-aos="fade-up"
-                     data-aos-delay="50">
-                    <div class="container" data-aos="fade-up"
-                         data-aos-delay="50">
-                        <h4>M<span><img class="world" src="frontend/img/icon/pepsi.svg"></span>RE FIZZ</h4>
-                        <h6>REFRESHING TASTE </h6>
-                        <p>The whole gang is here,with all of your favourite flavours! compare get nutritional fact<br>
-                            and check out ingredient for all our pepsi products </p>
-                    </div>
-                </div>
-                <img src="frontend/img/slider/slider4.png" class="w-100">
-            </div>
-            <!-- Slides -->
-
-            <div class="swiper-slide" style="">
-              <!--    <div class="carousel-caption">
-                <div class="container">
-                    <h4>M<span><img class="pepsi-icon" src="frontend/img/icon/pepsi.svg"></span>RE FIZZ</h4>
-                    <h6>REFRESHING TASTE </h6>
-                    <p>Why settle for average, when you can get the World Best Taste of beverage? With more fizz and<br>
-                        refreshing taste, our beverages are here to rock your world like none other! </p>
-                </div>-->
-            </div>
-                <img src="frontend/img/slider/slider2.png" class="w-100">
-            </div>
-
-
-            <div class="swiper-slide" style="">
-
-                <!--  <div class="carousel-caption">
-                <div class="container">
-                    <h4>BRINGING THE W<span><img class="pepsi-icon" src="frontend/img/icon/pepsi.svg"></span>RLD
-                    </h4>
-                    <h6>BEST TASTE OF BEVERAGE</h6>
-                    <p>Why settle for average, when you can get the World Best Taste of beverage? With more fizz and<br>
-                        refreshing taste, our beverages are here to rock your world like none other! </p>
-                </div>
-            </div>-->
-
-                <img src="frontend/img/slider/slider1.jpg" class="w-100">
+            <img
+              src="frontend/img/slider/slider3.jpg"
+              class="w-100 hide-on-mobile"
+            />
+            <img
+              src="frontend/img/pepsi-slide-mobile.png"
+              class="w-100 hide-on-desktop"
+            />
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="carousel-caption"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="container">
+                <h4>
+                  BRINGING THE W<span
+                    ><img
+                      class="world"
+                      src="frontend/img/icon/pepsi.svg" /></span
+                  >RLD
+                </h4>
+                <h6>BEST TASTE OF BEVERAGE</h6>
+                <p>
+                  Why settle for average, when you can get the World Best Taste
+                  of beverage? With more fizz and refreshing taste, our
+                  beverages are here to rock your world like none other!
+                </p>
+              </div>
             </div>
 
-
+            <img
+              src="frontend/img/slider/slider3.jpg"
+              class="w-100 hide-on-mobile"
+            />
+            <img
+              src="frontend/img/pepsi-slide-mobile.png"
+              class="w-100 hide-on-desktop"
+            />
+          </div>
+          <!-- Slides End -->
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev hero-prev"></div>
+        <div class="swiper-button-next hero-next"></div>
 
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
+      </div>
     </div>
 
-
-</div>
-
-<section class="section product-area section bg-white">
-    <div class="container" style="max-width: 1320px;">
+    <section class="section product-area section bg-white">
+      <div class="container" style="max-width: 1320px">
         <div class="swiper multiItemSwipe">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/1.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/2.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/3.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/4.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/5.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/6.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/7.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/4.png" class="w-100-product">
-                </div>
-                <div class="swiper-slide slide-size">
-                    <img src="frontend/img/products/5.png" class="w-100-product">
-                </div>
-
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/1.png" class="w-100-product" />
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/2.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/3.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/4.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/5.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/6.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/7.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/4.png" class="w-100-product" />
+            </div>
+            <div class="swiper-slide slide-size">
+              <img src="frontend/img/products/5.png" class="w-100-product" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section values-area section theme-bg-light-color"
+      id="about"
+    >
+      <div class="container">
+        <div class="row title-area" data-aos="fade-up" data-aos-delay="50">
+          <h5 class="title">Who we are</h5>
+          <p class="sub-title">
+            Transcom Beverage Ltd (TBL) is the exclusive PepsiCo Franchisee for
+            Bangladesh. TBL owns and operates modern plants in Dhaka and
+            Chittagong for bottling the renowned soft drink brands such as,
+            Pepsi, 7UP, Mirinda, Slice, Mountain Dew, Pepsi Diet and 7UP Light.
+          </p>
         </div>
 
-    </div>
+        <div class="row">
+          <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <!-- New image class added -->
+                <img
+                  src="frontend/img/carousel/1.png"
+                  class="w-100 hide-on-mobile"
+                  alt="First slide"
+                />
+                <img
+                  src="frontend/img/latifur-rahman.png"
+                  class="w-100 hide-on-desktop"
+                  alt="First slide"
+                />
 
-</section>
+                <div class="carousel-caption">
+                  <h5 class="name">Latifur Rahman</h5>
+                  <p class="designation">The Icon of Ethical Business</p>
 
-<section class="section values-area section theme-bg-light-color" id="about">
-    <div class="container">
-        <div class="row title-area" data-aos="fade-up"
-             data-aos-delay="50">
-            <h5 class="title">Who we are</h5>
-            <p class="sub-title">
-                Transcom Beverage Ltd (TBL) is the exclusive PepsiCo Franchisee for Bangladesh. TBL
-                owns and operates modern plants in Dhaka and Chittagong for bottling the renowned soft drink brands such
-                as, Pepsi, 7UP,
-                Mirinda, Slice, Mountain Dew, Pepsi Diet and 7UP Light.</p>
-        </div>
+                  <div class="details">
+                    <p>
+                      The Founder of the Transcom Digital, mother concerns of
+                      Transcom Beverage Limited. His Vision and ethical approach
+                      to tackle businesses make him the magician of Bangladesh
+                      business transformation.
+                    </p>
+                  </div>
 
-        <div class="row" >
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="frontend/img/carousel/1.png" class="w-100" alt="First slide">
-
-                        <div class="carousel-caption ">
-                            <h5 class="name">Latifur Rahman </h5>
-                            <p class="designation">The Icon of Ethical Business</p>
-
-                            <div class="details">
-                                <p>The Founder of the Transcom Digital, mother concerns of Transcom Beverage Limited.
-                                    His Vision and ethical approach to tackle businesses make him the magician of
-                                    Bangladesh business transformation.</p>
-                            </div>
-
-                            <div class="">
-                                <a class="btn btn-secondary btn-learn-more2 " href="leadership">Learn More <img
-                                        src="frontend/img/icon/pepsi-next.svg"
-                                        class="float-end product-next-btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
+                  <div class="">
+                    <a
+                      class="btn btn-secondary btn-learn-more2"
+                      href="leadership"
+                      >Learn More
+                      <img
+                        src="frontend/img/icon/pepsi-next.svg"
+                        class="float-end product-next-btn"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
                         <img src="frontend/img/carousel/2.png" class="w-100" alt="First slide">
 
                         <div class="carousel-caption ">
@@ -548,494 +645,666 @@
                                         class="float-end product-next-btn"></a>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselId" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselId" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only"></span>
-                </a>
+                    </div> -->
             </div>
-        </div>
 
+            <a
+              class="carousel-control-prev"
+              href="#carouselId"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselId"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+        </div>
 
         <div class="row mt-5">
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="home-mission-card">
-                    <div class="card-body text-center value-box">
-                        <img src="frontend/img/icon/value_icon.svg">
-                        <h4 class="box-title">Values</h4>
-                        <p>Our values guide our action and how we behave in our everyday business. The Core Values will
-                            guide us
-                            build the unique culture that TBL wants to cultivate across organization…</p>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="home-mission-card">
+              <div class="card-body text-center value-box">
+                <img src="frontend/img/icon/value_icon.svg" />
+                <h4 class="box-title">Values</h4>
+                <p>
+                  Our values guide our action and how we behave in our everyday
+                  business. The Core Values will guide us build the unique
+                  culture that TBL wants to cultivate across organization…
+                </p>
 
-                        <div class="learn-more-btn-section">
-                            <a href="mission-vision-values" class="learn-more justify-content-center">Learn More<span>
-                                <img class="value-icon" src="frontend/img/icon/right_arrow.svg"
-                                     alt="Right Arrow"> </span></a>
-                        </div>
-                    </div>
+                <div class="learn-more-btn-section">
+                  <a
+                    href="mission-vision-values"
+                    class="learn-more justify-content-center"
+                    >Learn More<span>
+                      <img
+                        class="value-icon"
+                        src="frontend/img/icon/right_arrow.svg"
+                        alt="Right Arrow"
+                      /> </span
+                  ></a>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="100">
-                <div class="home-mission-card">
-                    <div class="card-body text-center value-box">
-                        <img src="frontend/img/icon/mission_icon.svg">
-                        <h4 class="box-title">Mission</h4>
-                        <p>As largest CSD Beverages company of the country, our mission is to provide consumers
-                            delicious, healthy, affordable and convenient beverages by keeping highest market share in
-                            the segment</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="home-mission-card">
+              <div class="card-body text-center value-box">
+                <img src="frontend/img/icon/mission_icon.svg" />
+                <h4 class="box-title">Mission</h4>
+                <p>
+                  As largest CSD Beverages company of the country, our mission
+                  is to provide consumers delicious, healthy, affordable and
+                  convenient beverages by keeping highest market share in the
+                  segment
+                </p>
 
-                        <div class="learn-more-btn-section">
-                            <a href="mission-vision-values" class="learn-more justify-content-center">Learn More<span>
-                                <img class="value-icon" src="frontend/img/icon/right_arrow.svg"
-                                     alt="Right Arrow"> </span></a>
-                        </div>
-                    </div>
+                <div class="learn-more-btn-section">
+                  <a
+                    href="mission-vision-values"
+                    class="learn-more justify-content-center"
+                    >Learn More<span>
+                      <img
+                        class="value-icon"
+                        src="frontend/img/icon/right_arrow.svg"
+                        alt="Right Arrow"
+                      /> </span
+                  ></a>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="150">
-                <div class="home-mission-card">
-                    <div class="card-body text-center value-box">
-                        <img src="frontend/img/icon/value_icon.svg">
-                        <h4 class="box-title">Vision</h4>
-                        <p>To deliver sustainable growth in Bangladesh and be the dominant Beverages Company; delighting
-                            and nourishing every Bangladeshi, by best meeting their everyday beverages needs and
-                            delivering performance with purpose....</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="home-mission-card">
+              <div class="card-body text-center value-box">
+                <img src="frontend/img/icon/value_icon.svg" />
+                <h4 class="box-title">Vision</h4>
+                <p>
+                  To deliver sustainable growth in Bangladesh and be the
+                  dominant Beverages Company; delighting and nourishing every
+                  Bangladeshi, by best meeting their everyday beverages needs
+                  and delivering performance with purpose....
+                </p>
 
-                        <div class="learn-more-btn-section">
-                            <a href="mission-vision-values" class="learn-more justify-content-center">Learn More<span>
-                                <img class="value-icon" src="frontend/img/icon/right_arrow.svg"
-                                     alt="Right Arrow"> </span></a>
-                        </div>
-                    </div>
+                <div class="learn-more-btn-section">
+                  <a
+                    href="mission-vision-values"
+                    class="learn-more justify-content-center"
+                    >Learn More<span>
+                      <img
+                        class="value-icon"
+                        src="frontend/img/icon/right_arrow.svg"
+                        alt="Right Arrow"
+                      /> </span
+                  ></a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="product-area section bg-white">
-    <div class="container">
-        <div class="row" data-aos="fade-up"
-             data-aos-delay="50">
-            <h5 class="title text-center">Our Brands</h5>
-            <p class="text-center sub-title">Our entire beverage range is designed to give our consumers more and add
-                refreshment to lives. They are
-                available all around the country and are matched to our local consumers' taste and preferences.</p>
+    <section class="product-area section bg-white">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="50">
+          <h5 class="title text-center">Our Brands</h5>
+          <p class="text-center sub-title">
+            Our entire beverage range is designed to give our consumers more and
+            add refreshment to lives. They are available all around the country
+            and are matched to our local consumers' taste and preferences.
+          </p>
         </div>
         <div class="row hide-on-mobile">
-            
-            <div class="col-md-4" data-aos="fade-up"
-                            data-aos-delay="50">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
             <div class="card product-box">
-
-                <div class="card-body">
-                    <div class="product">
-                        <img class="mx-auto d-block" src="frontend/img/products/CAN 2.png" alt="Product">
-                        <h4 class="product-title">Pepsi</h4>
-                        <p>Our signature cola soft drink. Loved all around the world, the great taste of Pepsi coming with more fizz will refresh you everyday/p>
-                    </div>
-                    <button class="btn view-product btn-outline-primary w-100 pepsi-btn">
-                        <img src="frontend/img/icon/seven-up-next.svg" class="float-end product-next-btn">View
-                        Products
-                    </button>
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/CAN 2.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Pepsi</h4>
+                  <p>
+                    Our signature cola soft drink. Loved all around the world,
+                    the great taste of Pepsi coming with more fizz will refresh
+                    you everyday/p>
+                  </p>
                 </div>
 
+                <button
+                  class="btn view-product btn-outline-primary w-100 pepsi-btn"
+                >
+                  <img
+                    src="frontend/img/icon/seven-up-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
-
-            </div>
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/7up.png" alt="Product">
-                            <h4 class="product-title">7up</h4>
-                            <p>7UP is one of PepsiCo’s billion dollar brands present across more than 140 countries.
-                                It’s an authentic trademark drink with a strong heritage</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 seven-up-btn">
-                            <img src="frontend/img/icon/seven-up-next.svg" class="float-end product-next-btn">View
-                            Products
-                        </button>
-                    </div>
-
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/7up.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">7up</h4>
+                  <p>
+                    7UP is one of PepsiCo’s billion dollar brands present across
+                    more than 140 countries. It’s an authentic trademark drink
+                    with a strong heritage
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 seven-up-btn"
+                >
+                  <img
+                    src="frontend/img/icon/seven-up-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/pepsi_diet.png" alt="Product">
-                            <h4 class="product-title">Pepsi Diet</h4>
-                            <p>With its light, crisp taste, Pepsi Diet gives you all the refreshment you need - with
-                                zero sugar, zero calories and zero carbs</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 pepsi-diet-btn">
-                            <img src="frontend/img/icon/diet-next.svg" class="float-end product-next-btn">View Products
-                        </button>
-                    </div>
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/pepsi_diet.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Pepsi Diet</h4>
+                  <p>
+                    With its light, crisp taste, Pepsi Diet gives you all the
+                    refreshment you need - with zero sugar, zero calories and
+                    zero carbs
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 pepsi-diet-btn"
+                >
+                  <img
+                    src="frontend/img/icon/diet-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/7up_lite.png" alt="Product">
-                            <h4 class="product-title">7up Lite</h4>
-                            <p>Refresh yourself with the balanced taste of 7up Lite. Comes with the same crisp and the
-                                iconic Lemon Lime flavor - but with no sugar</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 seven-up-lite-btn">
-                            <img src="frontend/img/icon/lite-next.svg" class="float-end product-next-btn">View Products
-                        </button>
-                    </div>
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/7up_lite.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">7up Lite</h4>
+                  <p>
+                    Refresh yourself with the balanced taste of 7up Lite. Comes
+                    with the same crisp and the iconic Lemon Lime flavor - but
+                    with no sugar
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 seven-up-lite-btn"
+                >
+                  <img
+                    src="frontend/img/icon/lite-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/dew.png" alt="Product">
-                            <h4 class="product-title">Mountain Dew</h4>
-                            <p>The original, the one that started it all! Mountain Dew exhilarates and quenches with its
-                                one of a kind taste</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 dew-btn">
-                            <img src="frontend/img/icon/dew-next.svg" class="float-end product-next-btn">View
-                            Products
-                        </button>
-                    </div>
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/dew.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Mountain Dew</h4>
+                  <p>
+                    The original, the one that started it all! Mountain Dew
+                    exhilarates and quenches with its one of a kind taste
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 dew-btn"
+                >
+                  <img
+                    src="frontend/img/icon/dew-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/evervess.png" alt="Product">
-                            <h4 class="product-title">Evervess</h4>
-                            <p>A refreshing and bubbly beverage, ideal as a mixer or simply served over ice. More
-                                delicious with cold drinks</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 evervess-btn">
-                            <img src="frontend/img/icon/evervess-next.svg" class="float-end product-next-btn">View
-                            Products
-                        </button>
-                    </div>
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/evervess.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Evervess</h4>
+                  <p>
+                    A refreshing and bubbly beverage, ideal as a mixer or simply
+                    served over ice. More delicious with cold drinks
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 evervess-btn"
+                >
+                  <img
+                    src="frontend/img/icon/evervess-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/mirinda.png" alt="Product">
-                            <h4 class="product-title">Mirinda</h4>
-                            <p>An absolute fun-filled orange drink that is all about new experiences! It’s playful,
-                                unpredictable, and always bursting with excitement</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 mirinda-btn">
-                            <img src="frontend/img/icon/mirinda-next.svg" class="float-end product-next-btn">View
-                            Products
-                        </button>
-                    </div>
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/mirinda.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Mirinda</h4>
+                  <p>
+                    An absolute fun-filled orange drink that is all about new
+                    experiences! It’s playful, unpredictable, and always
+                    bursting with excitement
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 mirinda-btn"
+                >
+                  <img
+                    src="frontend/img/icon/mirinda-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/slice.png" alt="Product">
-                            <h4 class="product-title">Slice</h4>
-                            <p>A mango drink filled with pleasure to entice and excite you. Made from carefully picked
-                                fresh, pure, and juicy mangoes</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 slice-btn">
-                            <img src="frontend/img/icon/slice-next.svg" class="float-end product-next-btn">View
-                            Products
-                        </button>
-                    </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/slice.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Slice</h4>
+                  <p>
+                    A mango drink filled with pleasure to entice and excite you.
+                    Made from carefully picked fresh, pure, and juicy mangoes
+                  </p>
                 </div>
+                <button
+                  class="btn view-product btn-outline-primary w-100 slice-btn"
+                >
+                  <img
+                    src="frontend/img/icon/slice-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
+          </div>
 
-
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="frontend/img/products/aquafina.png" alt="Product">
-                            <h4 class="product-title">Aquafina</h4>
-                            <p>Aquafina’s reverse osmosis purification system means perfect taste every time.
-                                Makes
-                                you feel lively and fresh with every sip you take.</p>
-                        </div>
-                        <button class="btn view-product btn-outline-primary w-100 aquafina-btn">
-                            <img src="frontend/img/icon/aquafina-next.svg" class="float-end product-next-btn">View
-                            Products
-                        </button>
-                    </div>
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card product-box">
+              <div class="card-body">
+                <div class="product">
+                  <img
+                    class="mx-auto d-block"
+                    src="frontend/img/products/aquafina.png"
+                    alt="Product"
+                  />
+                  <h4 class="product-title">Aquafina</h4>
+                  <p>
+                    Aquafina’s reverse osmosis purification system means perfect
+                    taste every time. Makes you feel lively and fresh with every
+                    sip you take.
+                  </p>
                 </div>
-
+                <button
+                  class="btn view-product btn-outline-primary w-100 aquafina-btn"
+                >
+                  <img
+                    src="frontend/img/icon/aquafina-next.svg"
+                    class="float-end product-next-btn"
+                  />View Products
+                </button>
+              </div>
             </div>
-
+          </div>
         </div>
         <div class="mobile-product-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-aos="fade-up"
-                            data-aos-delay="50">
-                    <div class="card product-box">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/CAN 2.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Pepsi</h4>
+                    <p>
+                      Our signature cola soft drink. Loved all around the world,
+                      the great taste of Pepsi coming with more fizz will
+                      refresh you everyday/p>
+                    </p>
+                  </div>
 
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/CAN 2.png" alt="Product">
-                                <h4 class="product-title">Pepsi</h4>
-                                <p>Our signature cola soft drink. Loved all around the world, the great taste of Pepsi coming with more fizz will refresh you everyday/p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 pepsi-btn">
-                                <img src="frontend/img/icon/seven-up-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-
-                    </div>
-
+                  <button
+                    class="btn view-product btn-outline-primary w-100 pepsi-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/seven-up-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
                 </div>
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/7up.png" alt="Product">
-                                <h4 class="product-title">7up</h4>
-                                <p>7UP is one of PepsiCo’s billion dollar brands present across more than 140 countries.
-                                    It’s an authentic trademark drink with a strong heritage</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 seven-up-btn">
-                                <img src="frontend/img/icon/seven-up-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/pepsi_diet.png" alt="Product">
-                                <h4 class="product-title">Pepsi Diet</h4>
-                                <p>With its light, crisp taste, Pepsi Diet gives you all the refreshment you need - with
-                                    zero sugar, zero calories and zero carbs</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 pepsi-diet-btn">
-                                <img src="frontend/img/icon/diet-next.svg" class="float-end product-next-btn">View Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/7up_lite.png" alt="Product">
-                                <h4 class="product-title">7up Lite</h4>
-                                <p>Refresh yourself with the balanced taste of 7up Lite. Comes with the same crisp and the
-                                    iconic Lemon Lime flavor - but with no sugar</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 seven-up-lite-btn">
-                                <img src="frontend/img/icon/lite-next.svg" class="float-end product-next-btn">View Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/dew.png" alt="Product">
-                                <h4 class="product-title">Mountain Dew</h4>
-                                <p>The original, the one that started it all! Mountain Dew exhilarates and quenches with its
-                                    one of a kind taste</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 dew-btn">
-                                <img src="frontend/img/icon/dew-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/evervess.png" alt="Product">
-                                <h4 class="product-title">Evervess</h4>
-                                <p>A refreshing and bubbly beverage, ideal as a mixer or simply served over ice. More
-                                    delicious with cold drinks</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 evervess-btn">
-                                <img src="frontend/img/icon/evervess-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/mirinda.png" alt="Product">
-                                <h4 class="product-title">Mirinda</h4>
-                                <p>An absolute fun-filled orange drink that is all about new experiences! It’s playful,
-                                    unpredictable, and always bursting with excitement</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 mirinda-btn">
-                                <img src="frontend/img/icon/mirinda-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/slice.png" alt="Product">
-                                <h4 class="product-title">Slice</h4>
-                                <p>A mango drink filled with pleasure to entice and excite you. Made from carefully picked
-                                    fresh, pure, and juicy mangoes</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 slice-btn">
-                                <img src="frontend/img/icon/slice-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="swiper-slide" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="card product-box">
-
-                        <div class="card-body">
-                            <div class="product">
-                                <img class="mx-auto d-block" src="frontend/img/products/aquafina.png" alt="Product">
-                                <h4 class="product-title">Aquafina</h4>
-                                <p>Aquafina’s reverse osmosis purification system means perfect taste every time.
-                                    Makes
-                                    you feel lively and fresh with every sip you take.</p>
-                            </div>
-                            <button class="btn view-product btn-outline-primary w-100 aquafina-btn">
-                                <img src="frontend/img/icon/aquafina-next.svg" class="float-end product-next-btn">View
-                                Products
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
+              </div>
             </div>
-            <div class="swiper-pagination mobile-product-slider-pagination"></div>
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/7up.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">7up</h4>
+                    <p>
+                      7UP is one of PepsiCo’s billion dollar brands present
+                      across more than 140 countries. It’s an authentic
+                      trademark drink with a strong heritage
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 seven-up-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/seven-up-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/pepsi_diet.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Pepsi Diet</h4>
+                    <p>
+                      With its light, crisp taste, Pepsi Diet gives you all the
+                      refreshment you need - with zero sugar, zero calories and
+                      zero carbs
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 pepsi-diet-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/diet-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/7up_lite.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">7up Lite</h4>
+                    <p>
+                      Refresh yourself with the balanced taste of 7up Lite.
+                      Comes with the same crisp and the iconic Lemon Lime flavor
+                      - but with no sugar
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 seven-up-lite-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/lite-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/dew.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Mountain Dew</h4>
+                    <p>
+                      The original, the one that started it all! Mountain Dew
+                      exhilarates and quenches with its one of a kind taste
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 dew-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/dew-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/evervess.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Evervess</h4>
+                    <p>
+                      A refreshing and bubbly beverage, ideal as a mixer or
+                      simply served over ice. More delicious with cold drinks
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 evervess-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/evervess-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/mirinda.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Mirinda</h4>
+                    <p>
+                      An absolute fun-filled orange drink that is all about new
+                      experiences! It’s playful, unpredictable, and always
+                      bursting with excitement
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 mirinda-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/mirinda-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/slice.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Slice</h4>
+                    <p>
+                      A mango drink filled with pleasure to entice and excite
+                      you. Made from carefully picked fresh, pure, and juicy
+                      mangoes
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 slice-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/slice-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
+              <div class="card product-box">
+                <div class="card-body">
+                  <div class="product">
+                    <img
+                      class="mx-auto d-block"
+                      src="frontend/img/products/aquafina.png"
+                      alt="Product"
+                    />
+                    <h4 class="product-title">Aquafina</h4>
+                    <p>
+                      Aquafina’s reverse osmosis purification system means
+                      perfect taste every time. Makes you feel lively and fresh
+                      with every sip you take.
+                    </p>
+                  </div>
+                  <button
+                    class="btn view-product btn-outline-primary w-100 aquafina-btn"
+                  >
+                    <img
+                      src="frontend/img/icon/aquafina-next.svg"
+                      class="float-end product-next-btn"
+                    />View Products
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mobile-product-slider-pagination"></div>
         </div>
-    </div>
+      </div>
+    </section>
 
-</section>
-
-
-<section class="sustainability section theme-bg-light-color">
-    <div class="container">
-        <div class="row" data-aos="fade-up"
-             data-aos-delay="50">
-            <h5 class="title text-center">Sustainability</h5>
-            <p class="text-center sub-title">Protecting the quality, safety, health, and well-being of our associates is
-                one of our top priorities. We use many methods to integrate health and safety values into our company's
-                collective consciousness and ensure the continual improvement of our health & safety culture and
-                performance.</p>
+    <section class="sustainability section theme-bg-light-color">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="50">
+          <h5 class="title text-center">Sustainability</h5>
+          <p class="text-center sub-title">
+            Protecting the quality, safety, health, and well-being of our
+            associates is one of our top priorities. We use many methods to
+            integrate health and safety values into our company's collective
+            consciousness and ensure the continual improvement of our health &
+            safety culture and performance.
+          </p>
         </div>
 
-        <div class="row pt-3 video-section" data-aos="fade-up"
-             data-aos-delay="50">
-            <img src="frontend/img/sustainability2.png"  style="border-radius: 2%">
+        <div
+          class="row pt-3 video-section"
+          data-aos="fade-up"
+          data-aos-delay="50"
+        >
+          <img
+            src="frontend/img/sustainability2.png"
+            style="border-radius: 2%"
+          />
 
-            <a href="#">
-                <img src="frontend/img/icon/play.svg" id="video-play" alt="Play">
-            </a>
-
+          <a href="#">
+            <img src="frontend/img/icon/play.svg" id="video-play" alt="Play" />
+          </a>
         </div>
-       <!-- <div class="row mt-5">
+        <!-- <div class="row mt-5">
         <div class="col-md-4" data-aos="fade-up"
              data-aos-delay="50">
             <div class="card">
@@ -1094,311 +1363,326 @@
     </div>-->
 
         <div class="row mt-5">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="card">
+              <div class="card-body promote-card-left">
+                <h4>Reduce, Reuse & Recycle</h4>
+                <p class="font-small">
+                  We are working to incorporate 100% recycled plastic into our
+                  beverage bottles, so we can minimize our use of virgin,
+                  fossil-fuel based packaging.
+                </p>
 
-            <div class="col-md-6" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card">
-                    <div class="card-body promote-card-left">
-
-                        <h4>Reduce, Reuse & Recycle</h4>
-                        <p class="font-small">We are working to incorporate 100% recycled plastic into our beverage bottles, so we can
-                            minimize our use of virgin, fossil-fuel based packaging.</p>
-
-                        <a href="reuse" class="btn btn-outline-primary">Explore <img
-                                src="frontend/img/icon/arrow.svg">
-                        </a>
-                    </div>
-                </div>
+                <a href="reuse" class="btn btn-outline-primary"
+                  >Explore <img src="frontend/img/icon/arrow.svg" />
+                </a>
+              </div>
             </div>
-            <div class="col-md-6" data-aos="fade-up"
-                 data-aos-delay="100">
-                <div class="card">
-                    <div class="card-body promote-card-right">
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body promote-card-right">
+                <h4>Manufacturing Process</h4>
+                <p class="font-small">
+                  We aim to produce goods with minimum use of energy and natural
+                  resources, maximizing profit while ensuring societal health
+                  and safety throughout the product life cycle.
+                </p>
 
-                        <h4>Manufacturing Process</h4>
-                        <p class="font-small">We aim to produce goods with minimum use of energy and natural resources, maximizing profit
-                            while ensuring societal health and safety throughout the product life cycle.</p>
-
-                        <a href="care-sustain" class="btn btn-outline-primary">Explore <img
-                                src="frontend/img/icon/arrow.svg">
-                        </a>
-                    </div>
-                </div>
+                <a href="care-sustain" class="btn btn-outline-primary"
+                  >Explore <img src="frontend/img/icon/arrow.svg" />
+                </a>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="news-area section">
-    <div class="container">
-        <div class="row" data-aos="fade-up"
-             data-aos-delay="50">
-            <h5 class="title text-center">Stories & Updates</h5>
-            <p class="text-center sub-title">We touch millions of lives everyday. We are working to help shape a better
-                and healthier world for individuals, for the communities and for the planet. Our stories will help you
-                take a deeper look at how TBL is making a difference.</p>
+    <section class="news-area section">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="50">
+          <h5 class="title text-center">Stories & Updates</h5>
+          <p class="text-center sub-title">
+            We touch millions of lives everyday. We are working to help shape a
+            better and healthier world for individuals, for the communities and
+            for the planet. Our stories will help you take a deeper look at how
+            TBL is making a difference.
+          </p>
         </div>
         <div class="row pt-5">
-
-            <div class="col-md-8">
-                <a href="career-sub-page/4">
-                    <div class="row left-box border-3-side">
-                        <div class="col-md-6" data-aos="fade-up"
-                             data-aos-delay="50">
-                            <img src="frontend/img/mam2.png" class="w-100">
-                        </div>
-                        <div class="col-md-6 press-release" data-aos="fade-up"
-                             data-aos-delay="50">
-                            <span class="">Press Release</span>
-                            <h4>New leadership at <br> Transcom</h4>
-                            <p class="mt-3">Shahnaz Rahman, wife of late Latifur <br> Rahman, the legendary founder and
-                                <br> long-term chairman and
-                                CEO of <br> Transcom, has been appointed as the <br> business group's new chairman and
-                                <br> managing
-                                director.</p>
-                        </div>
-                    </div>
-                </a>
-
-
-            </div>
-
-            <div class="col-md-4 bg-gradient linked ">
-
-                <div class="card">
-                    <div class="card-body linked-in-area" style="background: #0077B5" data-aos="fade-up"
-                         data-aos-delay="50">
-
-                        <div class="linked-in-icon">
-                            <img src="frontend/img/icon/linked_in.svg" alt="icon">
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-                            <div class="vertical-line"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus faucibus arcu elit
-                                elementum. Nulla aliquet diam rhoncus et egestas. Odio risus, sit sed nibh ultrices sit.
-                                Elit ligula nulla amet sem dui dignissim. At iaculis suspendisse egestas nullam diam
-                                diam egestas..</p>
-                        </div>
-
-                        <div class="row explore-icon2">
-                            <a href="#" class="explore-icon">Explore <span> <img
-                                    src="frontend/img/icon/right_icon_white.svg"> </span></a>
-                        </div>
-                    </div>
+          <div class="col-md-8">
+            <a href="career-sub-page/4">
+              <div class="row left-box border-3-side">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+                  <img src="frontend/img/mam2.png" class="w-100" />
                 </div>
-            </div>
-        </div>
-
-
-        <div class="row pt-5" data-aos="fade-up"
-             data-aos-delay="50">
-            <a href="tvc">
-                <div class="col-md-9 video-section">
-                    <img src="frontend/img/video_bg.png" alt="Video" class="w-100">
-
-                    <a href="#">
-                        <img src="frontend/img/icon/play.svg" id="video-play" alt="Play">
-                    </a>
+                <div
+                  class="col-md-6 press-release"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                >
+                  <span class="">Press Release</span>
+                  <h4>
+                    New leadership at <br />
+                    Transcom
+                  </h4>
+                  <p class="mt-3">
+                    Shahnaz Rahman, wife of late Latifur <br />
+                    Rahman, the legendary founder and <br />
+                    long-term chairman and CEO of <br />
+                    Transcom, has been appointed as the <br />
+                    business group's new chairman and <br />
+                    managing director.
+                  </p>
                 </div>
-
-                <div class="col-md-3 border-3-side">
-                    <div class="tvc">
-                        <span class="tvc-sub-title">TVC</span>
-                        <h5>THE KING OF SWAG IS HERE!</h5>
-
-                        <p>Pepsi introduces the King of Swag himself, Mr. Salman Khan, to Bangladesh with the "Proti
-                            Chumukey
-                            Swag" campaign! The campaign was launched through the new Swag TVC, targeting the whole
-                            Bangladesh
-                            market.</p>
-                    </div>
-
-                </div>
+              </div>
             </a>
+          </div>
 
+          <div class="col-md-4 bg-gradient linked">
+            <div class="card">
+              <div
+                class="card-body linked-in-area"
+                style="background: #0077b5"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
+                <div class="linked-in-icon">
+                  <img src="frontend/img/icon/linked_in.svg" alt="icon" />
+                </div>
 
+                <div class="d-flex justify-content-between">
+                  <div class="vertical-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lectus faucibus arcu elit elementum. Nulla aliquet diam
+                    rhoncus et egestas. Odio risus, sit sed nibh ultrices sit.
+                    Elit ligula nulla amet sem dui dignissim. At iaculis
+                    suspendisse egestas nullam diam diam egestas..
+                  </p>
+                </div>
+
+                <div class="row explore-icon2">
+                  <a href="#" class="explore-icon"
+                    >Explore
+                    <span>
+                      <img
+                        src="frontend/img/icon/right_icon_white.svg"
+                      /> </span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
 
-<section class="section theme-bg-light pt-5">
-    <div class="container">
+        <div class="row pt-5" data-aos="fade-up" data-aos-delay="50">
+          <a href="tvc">
+            <div class="col-md-9 video-section">
+              <img src="frontend/img/video_bg.png" alt="Video" class="w-100" />
+
+              <a href="#">
+                <img
+                  src="frontend/img/icon/play.svg"
+                  id="video-play"
+                  alt="Play"
+                />
+              </a>
+            </div>
+
+            <div class="col-md-3 border-3-side">
+              <div class="tvc">
+                <span class="tvc-sub-title">TVC</span>
+                <h5>THE KING OF SWAG IS HERE!</h5>
+
+                <p>
+                  Pepsi introduces the King of Swag himself, Mr. Salman Khan, to
+                  Bangladesh with the "Proti Chumukey Swag" campaign! The
+                  campaign was launched through the new Swag TVC, targeting the
+                  whole Bangladesh market.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section theme-bg-light pt-5">
+      <div class="container">
         <div class="row">
-
-            <div class="col-md-5" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card">
-                    <div class="card-body fb-box">
-
-                        <div class="linked-in-icon">
-                            <img src="frontend/img/icon/fb.svg" alt="icon">
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-
-                            <div class="vertical-line-3">
-
-                            </div>
-
-                            <div class="row">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus faucibus arcu elit
-                                    elementum. Nulla aliquet diam rhoncus et egestas. Odio risus, sit sed nibh ultrices
-                                    sit. Elit ligula nulla amet sem dui dignissim. At iaculis suspendisse egestas nullam
-                                    diam diam egestas.</p>
-                            </div>
-
-                        </div>
-                        <div class="row explore-icon2">
-                            <a href="#" class="explore-icon">Explore <span> <img
-                                    src="frontend/img/icon/right_icon_white.svg"> </span></a>
-                        </div>
-                    </div>
+          <div class="col-md-5" data-aos="fade-up" data-aos-delay="50">
+            <div class="card">
+              <div class="card-body fb-box">
+                <div class="linked-in-icon">
+                  <img src="frontend/img/icon/fb.svg" alt="icon" />
                 </div>
 
+                <div class="d-flex justify-content-between">
+                  <div class="vertical-line-3"></div>
+
+                  <div class="row">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lectus faucibus arcu elit elementum. Nulla aliquet diam
+                      rhoncus et egestas. Odio risus, sit sed nibh ultrices sit.
+                      Elit ligula nulla amet sem dui dignissim. At iaculis
+                      suspendisse egestas nullam diam diam egestas.
+                    </p>
+                  </div>
+                </div>
+                <div class="row explore-icon2">
+                  <a href="#" class="explore-icon"
+                    >Explore
+                    <span>
+                      <img
+                        src="frontend/img/icon/right_icon_white.svg"
+                      /> </span
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="col-md-7 " data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card">
-                    <div class="card-body insta-box">
-
-                        <div class="linked-in-icon">
-                            <img src="frontend/img/icon/insta_icon.svg" alt="icon">
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-
-                            <div class="vertical-line-3">
-
-                            </div>
-
-                            <div class="row">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus faucibus arcu elit
-                                    elementum. Nulla aliquet diam rhoncus et egestas. Odio risus, sit sed nibh ultrices
-                                    sit. Elit ligula nulla amet sem dui dignissim. At iaculis suspendisse egestas nullam
-                                    diam diam egestas.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="row explore-icon2">
-                            <a href="#" class="explore-icon">Explore <span> <img
-                                    src="frontend/img/icon/right_icon_white.svg"> </span></a>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="50">
+            <div class="card">
+              <div class="card-body insta-box">
+                <div class="linked-in-icon">
+                  <img src="frontend/img/icon/insta_icon.svg" alt="icon" />
                 </div>
 
-            </div>
+                <div class="d-flex justify-content-between">
+                  <div class="vertical-line-3"></div>
 
+                  <div class="row">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lectus faucibus arcu elit elementum. Nulla aliquet diam
+                      rhoncus et egestas. Odio risus, sit sed nibh ultrices sit.
+                      Elit ligula nulla amet sem dui dignissim. At iaculis
+                      suspendisse egestas nullam diam diam egestas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row explore-icon2">
+                  <a href="#" class="explore-icon"
+                    >Explore
+                    <span>
+                      <img
+                        src="frontend/img/icon/right_icon_white.svg"
+                      /> </span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<section class="career section theme-bg-light-color pt-5" style="padding-bottom: 150px">
-    <div class="container">
-
-
-        <div class="row" data-aos="fade-up"
-             data-aos-delay="50">
-            <h5 class="title text-center">Career</h5>
-            <p class="text-center sub-title">Be a part of Transcom Beverages Limited's team and experience a
-                fulfilling
-                career, work-life balance, and commitment to a high level of values and ethics.</p>
+    <section
+      class="career section theme-bg-light-color pt-5"
+      style="padding-bottom: 150px"
+    >
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="50">
+          <h5 class="title text-center">Career</h5>
+          <p class="text-center sub-title">
+            Be a part of Transcom Beverages Limited's team and experience a
+            fulfilling career, work-life balance, and commitment to a high level
+            of values and ethics.
+          </p>
         </div>
 
-        <div class="row" data-aos="fade-up"
-             data-aos-delay="50">
-            <div class="col-12 career-bg">
-
-                <div class="row">
-                    <a href="career">
-                        <div class="col-md-4 career-card">
-                            <h4>Apply for jobs at Transcom Beverage limited</h4>
-                            <div class="d-flex ">
-                                <div class="vertical-line"></div>
-                                <p class="font-small" >Be a part of Transcom Beverages Limited's
-                                    <br>
-                                    team and experience a fulfilling career,
-                                    work- <br> life
-                                    balance, and commitment to a high level <br> of values and ethics</p>
-                            </div>
-                        </div>
-                    </a>
-
-
+        <div class="row" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-12 career-bg">
+            <div class="row">
+              <a href="career">
+                <div class="col-md-4 career-card">
+                  <h4>Apply for jobs at Transcom Beverage limited</h4>
+                  <div class="d-flex">
+                    <div class="vertical-line"></div>
+                    <p class="font-small">
+                      Be a part of Transcom Beverages Limited's
+                      <br />
+                      team and experience a fulfilling career, work- <br />
+                      life balance, and commitment to a high level <br />
+                      of values and ethics
+                    </p>
+                  </div>
                 </div>
+              </a>
             </div>
-
-
+          </div>
         </div>
 
         <div class="row job-scam">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card">
+              <div class="card-body">
+                <h4>Beaware of Job Scams</h4>
 
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Beaware of Job Scams</h4>
+                <div class="d-flex">
+                  <div class="vertical-line-4"></div>
 
-                        <div class="d-flex ">
-
-                            <div class="vertical-line-4">
-
-                            </div>
-
-                            <div class="row">
-                                <p class="mt-2">Transcom Beverages Limited <br> follows a merit-based employee <br>
-                                    recruitment process. During
-                                    the <br> process or while inviting <br> candidates for interviews, we do <br>
-                                    not
-                                    charge or accept
-                                    any amount <br> or security deposit from job <br> seekers.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="row explore-icon2">
-                            <a href="career" class="learn-more justify-content-center">Explore <span>
-                                <img class="value-icon" src="frontend/img/icon/right_arrow.svg"
-                                     alt="Right Arrow"> </span></a>
-                        </div>
-                    </div>
+                  <div class="row">
+                    <p class="mt-2">
+                      Transcom Beverages Limited <br />
+                      follows a merit-based employee <br />
+                      recruitment process. During the <br />
+                      process or while inviting <br />
+                      candidates for interviews, we do <br />
+                      not charge or accept any amount <br />
+                      or security deposit from job <br />
+                      seekers.
+                    </p>
+                  </div>
                 </div>
+
+                <div class="row explore-icon2">
+                  <a href="career" class="learn-more justify-content-center"
+                    >Explore
+                    <span>
+                      <img
+                        class="value-icon"
+                        src="frontend/img/icon/right_arrow.svg"
+                        alt="Right Arrow"
+                      /> </span
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="col-md-4 life-at-transcom" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card">
-                    <a href="career">
-                        <div class="card-body linked-in-area sustainability-row">
+          </div>
+          <div
+            class="col-md-4 life-at-transcom"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="card">
+              <a href="career">
+                <div class="card-body linked-in-area sustainability-row">
+                  <div class="linked-in-icon">
+                    <p>Sustainability</p>
+                  </div>
 
-                            <div class="linked-in-icon">
-                                <p>Sustainability</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="vertical-line"></div>
+                    <div class="">
+                      <h4 class="text-white">Step Up Program</h4>
 
-                            </div>
+                      <p>
+                        Step-up program is designed for new graduates who want
+                        to start a career in Sales and Marketing. Company offers
+                        a wide range of high class learning opportunities in the
+                        field of specialization though class room....
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
 
-                            <div class="d-flex justify-content-between">
-                                <div class="vertical-line"></div>
-                                <div class="">
-                                    <h4 class="text-white">Step Up Program</h4>
-
-                                    <p > Step-up program is designed for new graduates who
-                                        want
-                                        to start a career in Sales
-                                        and Marketing. Company offers a wide range of high class learning
-                                        opportunities
-                                        in
-                                        the field of specialization though class room....</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                    </a>
-
-                 <!--      <div class="card-body text-center">
+              <!--      <div class="card-body text-center">
 
                     <img src="frontend/img/icon/tem_icon.svg" alt="Team Icon">
                     <h5>3,364</h5>
@@ -1412,216 +1696,209 @@
                     </div>
 
                 </div>-->
-                </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card">
-                    <div class="card-body featured-job">
-                        <h4 class="featured-job-title">Featured Jobs</h4>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card">
+              <div class="card-body featured-job">
+                <h4 class="featured-job-title">Featured Jobs</h4>
 
-                        <div class="d-flex justify-content-between featured-job-box ">
+                <div class="d-flex justify-content-between featured-job-box">
+                  <div class="vertical-line-2"></div>
 
-                            <div class="vertical-line-2">
-
-                            </div>
-
-                            <div class="row">
-                                <h6>Current Vacancies</h6>
-                                <p>Product Manager, Various Locations</p>
-                            </div>
-
-                        </div>
-                        <div class="d-flex justify-content-between mt-5 featured-job-box">
-
-                            <div class="vertical-line-2">
-
-                            </div>
-
-                            <div class="row">
-                                <h6>Current Vacancies</h6>
-                                <p>Product Manager, Various Locations</p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row explore-icon2 ">
-                            <a href="career" class="learn-more justify-content-center text-white">Explore<span>
-                                <img class="value-icon" src="frontend/img/icon/right_icon_white.svg"
-                                     alt="Right Arrow"> </span></a>
-                        </div>
-
-
-                    </div>
+                  <div class="row">
+                    <h6>Current Vacancies</h6>
+                    <p>Product Manager, Various Locations</p>
+                  </div>
                 </div>
+                <div
+                  class="d-flex justify-content-between mt-5 featured-job-box"
+                >
+                  <div class="vertical-line-2"></div>
+
+                  <div class="row">
+                    <h6>Current Vacancies</h6>
+                    <p>Product Manager, Various Locations</p>
+                  </div>
+                </div>
+
+                <div class="row explore-icon2">
+                  <a
+                    href="career"
+                    class="learn-more justify-content-center text-white"
+                    >Explore<span>
+                      <img
+                        class="value-icon"
+                        src="frontend/img/icon/right_icon_white.svg"
+                        alt="Right Arrow"
+                      /> </span
+                  ></a>
+                </div>
+              </div>
             </div>
-
-
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-
-</section>
-
-<section class="footer section theme-bg-light " >
-    <div class="container">
+    <section class="footer section theme-bg-light">
+      <div class="container">
         <div class="row">
-            <div class="col-md-3 col-12">
-                <div class="footer-about">
-                    <h4>About the company</h4>
-                    <p>
-                        Transcom Beverage Ltd <br> (TBL) is the exclusive <br> PepsiCo Franchise for <br> Bangladesh</p>
+          <div class="col-md-3 col-12">
+            <div class="footer-about">
+              <h4>About the company</h4>
+              <p>
+                Transcom Beverage Ltd <br />
+                (TBL) is the exclusive <br />
+                PepsiCo Franchise for <br />
+                Bangladesh
+              </p>
 
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><img src="frontend/img/icon/twitter.png"></li>
-                        <li class="list-inline-item"><img src="frontend/img/icon/facebook.png"></li>
-                        <li class="list-inline-item"><img src="frontend/img/icon/instagram.png"></li>
-                        <li class="list-inline-item"><img src="frontend/img/icon/linkedin.png"></li>
-
-                    </ul>
-                </div>
-
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <img src="frontend/img/icon/twitter.png" />
+                </li>
+                <li class="list-inline-item">
+                  <img src="frontend/img/icon/facebook.png" />
+                </li>
+                <li class="list-inline-item">
+                  <img src="frontend/img/icon/instagram.png" />
+                </li>
+                <li class="list-inline-item">
+                  <img src="frontend/img/icon/linkedin.png" />
+                </li>
+              </ul>
             </div>
-            <div class="col-md-3 col-12">
-                <div class="footer-end">
-                    <h4>About Us</h4>
-                    <ul class="list-inline">
-                        <li><a href="our-history"> Our History</a></li>
-                        <li><a href="mission-vision-values"> Vision, Mission & Values</a></li>
-                        <li><a href="reward-recognition"> Reward and Recognition</a></li>
-                        <li><a href="leadership"> Leadership</a></li>
-                        <li><a href="corporate-social-responsibility"> Corporate social
-                            Responsibility</a></li>
-                    </ul>
-                </div>
-
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="footer-end">
+              <h4>About Us</h4>
+              <ul class="list-inline">
+                <li><a href="our-history"> Our History</a></li>
+                <li>
+                  <a href="mission-vision-values"> Vision, Mission & Values</a>
+                </li>
+                <li>
+                  <a href="reward-recognition"> Reward and Recognition</a>
+                </li>
+                <li><a href="leadership"> Leadership</a></li>
+                <li>
+                  <a href="corporate-social-responsibility">
+                    Corporate social Responsibility</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="col-md-3 col-12">
-                <div class="footer-end">
-                    <h4>Sustainability </h4>
-                    <ul class="list-inline">
-                        <li><a href="care-sustain"> Create Care & Sustain</a></li>
-                        <li><a href="reuse"> Reuse, Recycle and Reduce</a></li>
-                    </ul>
-                </div>
-
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="footer-end">
+              <h4>Sustainability</h4>
+              <ul class="list-inline">
+                <li><a href="care-sustain"> Create Care & Sustain</a></li>
+                <li><a href="reuse"> Reuse, Recycle and Reduce</a></li>
+              </ul>
             </div>
-            <div class="col-md-3 col-12">
-                <div class="footer-end">
-                    <h4>Others </h4>
-                    <ul class="list-inline">
-                        <li><a href="latest-stories"> Latest Stories</a></li>
-                        <li><a href="tvc"> TVC</a></li>
-                        <li><a href="news"> News</a></li>
-
-                    </ul>
-                </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="footer-end">
+              <h4>Others</h4>
+              <ul class="list-inline">
+                <li><a href="latest-stories"> Latest Stories</a></li>
+                <li><a href="tvc"> TVC</a></li>
+                <li><a href="news"> News</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="frontend/js/jquery-3.6.0.min.js"></script>
+    <script src="frontend/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="frontend/js/popper.min.js"></script>
 
-
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="frontend/js/jquery-3.6.0.min.js"></script>
-<script src="frontend/js/bootstrap.min.js"></script>
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<script src="frontend/js/popper.min.js"></script>
-
-<!--<script src="frontend/js/video.min.js"></script>
+    <!--<script src="frontend/js/video.min.js"></script>
 <script src="frontend/js/Youtube.min.js"></script>-->
-<script src="frontend/js/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    AOS.init({
+    <script src="frontend/js/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init({
         duration: 1200,
-    })
+      })
+    </script>
 
-</script>
+    <script src="frontend/js/main.js"></script>
 
-<script src="frontend/js/main.js"></script>
-
-<script>
-
-    const swiper = new Swiper('.hero-swipe', {
-
-        loop: true,
-        autoplay: {
-            delay: 5000,
-        },
+    <script>
+      const swiper = new Swiper(".hero-swipe", {
+        loop: false,
+        // autoplay: {
+        //     delay: 5000,
+        // },
         fadeEffect: {
-            crossFade: true
+          crossFade: true,
         },
         on: {
-            // slideChangeTransitionStart: function () {
-            //     //data-aos="fade-up" data-aos-delay="50"
-            //     // add attribute to this carousel-caption
-            //     // active slide
-            //     var activeSlide = this.activeIndex;
-
-            //     console.log(activeSlide);
-
-            //     $('.carousel-caption').attr('data-aos', 'fade-up');
-            //     $('.carousel-caption').attr('data-aos-delay', '50');
-            // }
-            slideChangeTransitionStart: function () {
-                $('.carousel-caption').hide(0);
-                $('.carousel-caption').removeClass('aos-init').removeClass('aos-animate');
-            },
-            slideChangeTransitionEnd: function () {
-                $('.carousel-caption').show(0);
-                AOS.init();
-            },
+          slideChangeTransitionStart: function () {
+            $(".carousel-caption").hide(0)
+            $(".carousel-caption")
+              .removeClass("aos-init")
+              .removeClass("aos-animate")
+          },
+          slideChangeTransitionEnd: function () {
+            $(".carousel-caption").show(0)
+            AOS.init()
+          },
         },
 
         // If we need pagination
         pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
         },
+      })
 
-    });
-
-
-    var swiper2 = new Swiper(".multiItemSwipe", {
+      var swiper2 = new Swiper(".multiItemSwipe", {
         slidesPerView: 7,
         spaceBetween: 30,
         loop: true,
         autoplay: {
-            delay: 4000,
+          delay: 4000,
         },
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+          el: ".swiper-pagination",
+          clickable: true,
         },
-    });
+      })
 
-    /*    let image = document.getElementsByClassName('product-next-btn ')[0];
+      /*    let image = document.getElementsByClassName('product-next-btn ')[0];
 
         document.getElementsByClassName('view-product')[0].onmouseover = function() {
             image.src = '..frontend/img/icon/white-next.svg';
 
             console.log("hello");
         };*/
-</script>
+    </script>
 
-<script>
-    $(function () {
-        $('.popup-youtube, .popup-vimeo').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
-    });
-</script>
-</body>
+    <script>
+      $(function () {
+        $(".popup-youtube, .popup-vimeo").magnificPopup({
+          disableOn: 700,
+          type: "iframe",
+          mainClass: "mfp-fade",
+          removalDelay: 160,
+          preloader: false,
+          fixedContentPos: false,
+        })
+      })
+    </script>
+  </body>
 </html>
