@@ -46,6 +46,7 @@
         }
 
     </style>
+    <link rel="stylesheet" href="./frontend/css/rakib_mobile.css" />
 
 </head>
 <body >
@@ -630,33 +631,9 @@
                 refreshment to lives. They are
                 available all around the country and are matched to our local consumers' taste and preferences.</p>
         </div>
-        <div class="row">
-        <!--    @foreach($products as $product)
+        <div class="row hide-on-mobile">
+            
             <div class="col-md-4" data-aos="fade-up"
-                 data-aos-delay="50">
-                <div class="card product-box">
-
-                    <div class="card-body">
-                        <div class="product">
-                            <img class="mx-auto d-block" src="{{$product->image}}" alt="Product">
-                            <div class="product-write">
-                                <h4 class="product-title">{{$product->title}}</h4>
-                                <p >{!! $product->details !!}</p>
-                            </div>
-
-                        </div>
-                        <a href="product-details/{{$product->id}}"
-                           class="btn view-product btn-outline-primary w-100 {{$product->color}}">
-                            <img src="frontend/img/icon/pepsi-next.svg" class="float-end product-next-btn">
-                            View Products
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-            @endforeach-->
-                 <div class="col-md-4" data-aos="fade-up"
                             data-aos-delay="50">
             <div class="card product-box">
 
@@ -674,7 +651,7 @@
 
             </div>
 
-        </div>
+            </div>
             <div class="col-md-4" data-aos="fade-up"
                  data-aos-delay="50">
                 <div class="card product-box">
@@ -842,6 +819,196 @@
 
             </div>
 
+        </div>
+        <div class="mobile-product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-aos="fade-up"
+                            data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/CAN 2.png" alt="Product">
+                                <h4 class="product-title">Pepsi</h4>
+                                <p>Our signature cola soft drink. Loved all around the world, the great taste of Pepsi coming with more fizz will refresh you everyday/p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 pepsi-btn">
+                                <img src="frontend/img/icon/seven-up-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/7up.png" alt="Product">
+                                <h4 class="product-title">7up</h4>
+                                <p>7UP is one of PepsiCo’s billion dollar brands present across more than 140 countries.
+                                    It’s an authentic trademark drink with a strong heritage</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 seven-up-btn">
+                                <img src="frontend/img/icon/seven-up-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/pepsi_diet.png" alt="Product">
+                                <h4 class="product-title">Pepsi Diet</h4>
+                                <p>With its light, crisp taste, Pepsi Diet gives you all the refreshment you need - with
+                                    zero sugar, zero calories and zero carbs</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 pepsi-diet-btn">
+                                <img src="frontend/img/icon/diet-next.svg" class="float-end product-next-btn">View Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/7up_lite.png" alt="Product">
+                                <h4 class="product-title">7up Lite</h4>
+                                <p>Refresh yourself with the balanced taste of 7up Lite. Comes with the same crisp and the
+                                    iconic Lemon Lime flavor - but with no sugar</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 seven-up-lite-btn">
+                                <img src="frontend/img/icon/lite-next.svg" class="float-end product-next-btn">View Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/dew.png" alt="Product">
+                                <h4 class="product-title">Mountain Dew</h4>
+                                <p>The original, the one that started it all! Mountain Dew exhilarates and quenches with its
+                                    one of a kind taste</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 dew-btn">
+                                <img src="frontend/img/icon/dew-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/evervess.png" alt="Product">
+                                <h4 class="product-title">Evervess</h4>
+                                <p>A refreshing and bubbly beverage, ideal as a mixer or simply served over ice. More
+                                    delicious with cold drinks</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 evervess-btn">
+                                <img src="frontend/img/icon/evervess-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/mirinda.png" alt="Product">
+                                <h4 class="product-title">Mirinda</h4>
+                                <p>An absolute fun-filled orange drink that is all about new experiences! It’s playful,
+                                    unpredictable, and always bursting with excitement</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 mirinda-btn">
+                                <img src="frontend/img/icon/mirinda-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/slice.png" alt="Product">
+                                <h4 class="product-title">Slice</h4>
+                                <p>A mango drink filled with pleasure to entice and excite you. Made from carefully picked
+                                    fresh, pure, and juicy mangoes</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 slice-btn">
+                                <img src="frontend/img/icon/slice-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide" data-aos="fade-up"
+                    data-aos-delay="50">
+                    <div class="card product-box">
+
+                        <div class="card-body">
+                            <div class="product">
+                                <img class="mx-auto d-block" src="frontend/img/products/aquafina.png" alt="Product">
+                                <h4 class="product-title">Aquafina</h4>
+                                <p>Aquafina’s reverse osmosis purification system means perfect taste every time.
+                                    Makes
+                                    you feel lively and fresh with every sip you take.</p>
+                            </div>
+                            <button class="btn view-product btn-outline-primary w-100 aquafina-btn">
+                                <img src="frontend/img/icon/aquafina-next.svg" class="float-end product-next-btn">View
+                                Products
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-pagination mobile-product-slider-pagination"></div>
         </div>
     </div>
 
