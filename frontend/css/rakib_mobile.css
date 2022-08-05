@@ -1,0 +1,29 @@
+@media only screen and (max-width: 991px) {
+    .navbar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cd-timeline::before {
+        left: 4%;
+    }
+    .cd-timeline-img {
+        left: 4%;
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content {
+        float: left;
+    }
+    .cd-timeline-block:nth-child(odd) .cd-timeline-content {
+        float: left;
+    }
+    .cd-timeline-content {
+        margin-left: 50px;
+    }
+    #cd-timeline .title {
+        float: left !important;
+    }
+
+}
+
+
