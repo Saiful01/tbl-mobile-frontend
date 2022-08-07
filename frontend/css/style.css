@@ -1903,15 +1903,15 @@ table {
         margin-bottom: 15px;
     }
 
-    #member-item {
+    .member-item {
         height: 200px;
     }
 
-    #member-item img {
+    .member-item img {
         height: 200px;
     }
 
-    #member-item .color-item-6 .text-item {
+    .member-item .color-item-6 .text-item {
         color: white !important;
         text-align: center;
     }
@@ -2066,15 +2066,15 @@ a:hover {
 }
 
 
-#member-item {
+.member-item {
     min-height: 300px;
 }
 
-#member-item img {
+.member-item img {
     min-height: 300px;
 }
 
-#member-item .color-item-6 .text-item {
+.member-item .color-item-6 .text-item {
     margin-top: 100px;
     color: white !important;
     text-align: center;
@@ -2388,6 +2388,32 @@ a:hover {
     margin-top: 20px;
     font-size: 17px;
 }
+.w2-image {
+    margin-left: -11px;
+}
+.job-box-2 {
+    margin-top: 25px;
+}
+.career-last-section {
+    padding-bottom: 150px;
+}
+.career{
+    padding-bottom: 150px
+}
+.home-box h6 {
+    font-size: 25px !important;
+
+}
+.home-box p {
+    font-size: 17px !important;
+
+}
+.hide-on-desktop{
+    display: none;
+}
+
+
+
 
 
 

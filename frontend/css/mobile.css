@@ -10,6 +10,7 @@
     }
     .footer-end {
         float: left !important;
+        margin-top: 25px;
     }
     .hero-section {
         margin-top: -21px;
@@ -34,5 +35,82 @@
     #cd-timeline {
         width: 690px !important;
     }
+    .page-title-content h4 {
+        margin-top: 72px;
+        font-size: 40px;
+    }
+    .page-title-content p {
+        font-size: 15px;
+        color: #939393;
+    }
+    .job-career h5{
+        font-size: 15px;
+    }
+    .job-career p{
+        font-size: 13px;
+    }
+    .featured-job-box {
+        margin-top: 10px;
+    }
+    .explore-icon-job {
+        padding-left: 0px;
+    }
+    .w2-image {
+        margin-left: 0px;
+    }
+    .featured-job-title {
+        margin-top: 5px;
+    }
+    .featured-job h6 {
+        font-size: 19px;
+    }
+    .featured-job p {
+        font-size: 13px;
+    }
+    .career-last-section {
+        padding-bottom: 40px;
+    }
+    .values-area {
+        padding: 11px 0px;
+    }
+    .title-area {
+        padding: 20px;
+    }
+    .values-area .carousel-item {
+        padding-top: 20px !important;
+
+    }
+    .home-mission-card {
+        margin-top: 30px;
+    }
+    .sustainability {
+        padding-bottom: 30px;
+    }
+    .vertical-line {
+        height: 200px;
+        margin-top: 9px;
+
+    }
+
+    .news-area {
+
+         padding-bottom: 0px;
+    }
+    .tvc {
+        padding: 15px;
+    }
+    .font-small {
+        font-size: 15px;
+    }
+    .career {
+        padding-bottom: 40px;
+    }
+    .job-scam .card-body {
+        min-height: 330px;
+    }
+    .btn-learn-more2 {
+        bottom: -300px !important;
+    }
+
 
 }

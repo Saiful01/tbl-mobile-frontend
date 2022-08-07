@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="description" content="TBL"/>
+    <meta name="keywords" content="TBL"/>
+    <meta name="author" content="Qubit Solution Lab"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="frontend/img/favicon.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="frontend/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="frontend/css/video-js.css" rel="stylesheet"/>
+    <link href="frontend/css/style.css" rel="stylesheet"/>
+    <link href="frontend/css/style2.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./frontend/css/rakib_desktop.css"/>
+
+    <link href="frontend/css/mobile.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="frontend/css/timeline.css"/>
+    <link rel="stylesheet" href="frontend/css/aos.css"/>
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="frontend/css/swiper-bundle.min.css"/>
+    <script src="frontend/js/swiper-bundle.min.js"></script>
+
+    <script src="frontend/js/angular.min.js"></script>
+    <link rel="stylesheet" href="./frontend/css/rakib_mobile.css"/>
+    <style>
+        .values-area {
+            padding: 0px 0px;
+        }
+
+        .col-md-3 {
+            flex: 0 0 auto;
+            width: 25%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+<nav
+        class="navbar navbar-expand-lg navbar-light bg-light <!--fixed-top-->"
+        aria-label="Main navigation"
+>
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="frontend/img/Pepsi_Logo_2014.png" height="35px"/>
+        </a>
+        <button
+                class="navbar-toggler collapsed custom-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-content"
+        >
+            <div class="hamburger-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside"
+                    >About</a
+                    >
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>About Us</h5>
+                                        <p>
+                                            Transcom Beverage Ltd (TBL) is the exclusive PepsiCo
+                                            Franchise for Bangladesh
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--     <h5>About</h5>-->
+
+                                        <ul>
+                                            <li>
+                                                <a class="child-item" href="/our-history">
+                                                    Our History</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a class="child-item" href="/mission-vision-values">
+                                                    Vision, Mission & Values</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a class="child-item" href="/reward-recognition">
+                                                    Reward and Recognition</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a class="child-item" href="/leadership">
+                                                    Leadership</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                        class="child-item"
+                                                        href="/corporate-social-responsibility"
+                                                >
+                                                    Corporate social Responsibility</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside"
+                    >Brands</a
+                    >
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>Brands</h5>
+                                        <p>
+                                            Our entire beverage range is designed to give our
+                                            consumers more and add refreshment to their lives.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--   <h5>About</h5>-->
+
+                                        <ul>
+                                            <li>
+                                                <a class="child-item" href="/our-products">
+                                                    Our Products</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside"
+                    >
+                        Sustainability</a
+                    >
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 style="font-size: 30px">Sustainability</h5>
+                                        <p>
+                                            We’re changing how we source ingredients, manufacture
+                                            and sell our products, and how we inspire people
+                                            through our brands.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--  <h5>Create Care & Sustain</h5>-->
+
+                                        <ul>
+                                            <li>
+                                                <a class="child-item" href="/care-sustain">
+                                                    Create Care & Sustain</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a class="child-item" href="/reuse">
+                                                    Reuse, Recycle and Reduce</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside"
+                    >
+                        Careers</a
+                    >
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>Careers</h5>
+                                        <p>
+                                            If you are planning to make an impact through crafting
+                                            brands and choices people love, we have exciting news
+                                            for you!
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--    <h5>Create Care & Sustain</h5>-->
+
+                                        <ul>
+                                            <li>
+                                                <a class="child-item" href="/career">Careers Hub</a>
+                                            </li>
+                                            <li>
+                                                <a class="child-item" href="/cv-bank">CV Bank</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--  <li class="nav-item">
+                    <a class="nav-link" href="/career">Careers</a>
+                </li>-->
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside"
+                    >
+                        News</a
+                    >
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>News</h5>
+                                        <p>
+                                            Check out the latest news and join the conversation on
+                                            our social media channels
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <!--   <h5> News</h5>-->
+
+                                        <ul>
+                                            <li>
+                                                <a class="child-item" href="/latest-stories">
+                                                    Latest Stories</a
+                                                >
+                                            </li>
+                                            <li><a class="child-item" href="/tvc"> TVC</a></li>
+                                            <li><a class="child-item" href="/news"> News</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Contact</a>
+                </li>
+                <!--    <li class="nav-item">
+
+                  <a href="/checkout">
+                      <span class="cart-number" style="background: red" ng-cloak="" ng-bind="total_item">0</span>
+                      <img src="frontend/img/icon/shopping-cart.svg" height="30">
+                  </a>
+
+              </li>-->
+            </ul>
+            <form class="d-flex ms-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link search-btn" href="#">
+                            <img src="frontend/img/search_icon.svg"/> Search
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- END Mega Menu HTML -->
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+    <div class="mobile-nav-header">
+        <a class="mobile-nav-title" href="/">
+            <img src="frontend/img/logo.png" alt="logo"/>
+        </a>
+        <div class="btns">
+            <a id="nav-open" href="#">
+                <!-- <img src="frontend/img/collpase_icon.svg" alt=""> -->
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="mobile-nav-content">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/">Home</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/about">About</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/our-products">Our Products</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/care-sustain"
+                >Create Care & Sustain</a
+                >
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/reuse"
+                >Reuse, Recycle and Reduce</a
+                >
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/career">Careers</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/latest-stories">Latest Stories</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/tvc">TVC</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/news">News</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Mobile Nav -->
+
+<!-- New Search modal -->
+<div id="search-modal-dialog" class="search-modal">
+    <button class="search-close" title="Close search-modal">x</button>
+    <div class="search-modal-content">
+        <form action="#">
+            <input type="text" placeholder="Search Anything" name="search"/>
+            <button type="submit">
+                <img src="frontend/img/search_icon.svg" alt=""/>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Search Modal End
+<button id="modal-close-btn"><img src="frontend/img/close_icon.svg" alt="close"></button>
+<input type="text" placeholder="testing....">-->
+
+<!--<section class=" section">
+<div class="page-title-bgs ">
+
+    <div class="container">
+        <div class="page-title-content">
+            <h4>Our History</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eu lectus nibh est. Nec, turpis
+                magna nulla est
+                neque, suscipit. Diam, donec et dolor nunc. Gravida purus tellus morbi at in.
+            </p>
+        </div>
+    </div>
+</div>
+</section>-->
+
+<section
+        class="section page-title-bg"
+        style="
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('frontend/img/background/history.jpg');
+      "
+>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="page-title-content">
+                <h4>TBL Leadership</h4>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p style="color: #939393">
+                            We act in ways to create a more sustainable and better shared future to make a difference in
+                            people's lives, communities and our planet by doing business the right way and TBL's dynamic
+                            leadership team is working to shape this collective dream
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section values-area section  " id="about">
+
+
+    <div class="carousel-height" data-aos="fade-up"
+         data-aos-delay="50">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="frontend/img/leadership/1.jpg" class="w-100" alt="First slide">
+
+                    <div class="carousel-caption leadership-caption ">
+                        <h5 class="name">Latifur Rahman </h5>
+                        <p class="designation">The Icon of Ethical Business</p>
+
+                        <div class="details">
+                            <p>The Founder of the Transcom Digital, mother concerns of Transcom Beverage
+                                Limited.
+                                His Vision and ethical approach to tackle businesses make him the magician of
+                                Bangladesh business transformation.</p>
+                        </div>
+
+                        <div class="leadership-btn">
+                            <a class="btn btn-secondary btn-learn-more" href="/leadership/1">Learn More <img
+                                    src="frontend/img/icon/pepsi-next.svg"
+                                    class="float-end product-next-btn"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="frontend/img/leadership/2.jpg" class="w-100" alt="First slide">
+
+                    <div class="carousel-caption leadership-caption ">
+                        <h5 class="name">Shahnaj Rahman </h5>
+                        <p class="designation">The Torchbearer of Unmatched Legacy</p>
+
+                        <div class="details">
+                            <p>The Chairman and great inspiration of Transcom Beverage Limited. She is leading
+                                the
+                                company from the front with the goal of helping consumers to get the most
+                                refreshing
+                                & top notch beverages</p>
+                        </div>
+                        <div class="leadership-btn">
+                            <a class="btn btn-secondary btn-learn-more" href="/leadership/2">Learn More <img
+                                    src="frontend/img/icon/pepsi-next.svg"
+                                    class="float-end product-next-btn"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="frontend/img/carousel/6.png" class="w-100" alt="First slide">
+
+                    <div class="carousel-caption leadership-caption ">
+                        <h5 class="name">Simeen Rahman</h5>
+                        <p class="designation">Redefining The Future with New Possibilities</p>
+
+                        <div class="details">
+                            <p>Simeen Rahman is the Group CEO of Transcom Group and Board Director of its
+                                subsidiaries.
+                                Transcom is one of the largest and most diversified conglomerates in the
+                                country. She presides
+                                over
+                                all Transcom Group companies with operational and management control</p>
+                        </div>
+                        <div class="leadership-btn">
+                            <a class="btn btn-secondary btn-learn-more" href="/leadership/3">Learn More <img
+                                    src="frontend/img/icon/pepsi-next.svg"
+                                    class="float-end product-next-btn"/></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<section class="section team">
+
+
+    <div class="row" data-aos="fade-up"
+         data-aos-delay="50">
+        <h5 class="title text-center">Leaderships</h5>
+        <p class="text-center sub-title">The people who run the show, add value to millions of lives, refresh
+            the
+            world and make a difference, everyday!</p>
+    </div>
+
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #88B4DD;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/1.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #015FB6;">
+            <div class="text-item">
+                <p class="">Executive Director, Operations</p>
+                <h4 class="team-title">Deepinder <br> Tiwana </h4>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #14BC5B;">
+            <div class="text-item">
+                <p class="">Executive Director, Operations</p>
+                <h4 class="team-title">Suvransu Sankar <br> Nandy </h4>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/2.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #91E0B2;">
+
+        </div>
+
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #F5CDA3;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/3.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #EA953C;">
+            <div class="text-item">
+                <p class="">Head, Commercial</p>
+                <h4 class="team-title">N. K. Bhowmik </h4>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #F9663D;">
+            <div class="text-item">
+                <p class="">Chief Financial Officer</p>
+                <h4 class="team-title">Mohammed <br> Ismail </h4>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/4.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #FCB7A4;">
+
+        </div>
+
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #88B4DD;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/siddiqur.jpg" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #015FB6;">
+            <div class="text-item">
+                <p class="">Senior Plant Manager</p>
+                <h4 class="team-title">Siddiqur <br> Rahman </h4>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #14BC5B;">
+            <div class="text-item">
+                <p class="">GM, HR & Corp. Affairs</p>
+                <h4 class="team-title">AKM Atiqur <br> Rahman </h4>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/6.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #91E0B2;">
+
+        </div>
+
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #F5CDA3;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/abhishek.jpg" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #EA953C;">
+            <div class="text-item">
+                <p class="">Head, Sales Strategy</p>
+                <h4 class="team-title">Abhishek Paul</h4>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #F9663D;">
+            <div class="text-item">
+                <p class="">Head, Traditional Trade</p>
+                <h4 class="team-title">Bibek Sur </h4>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/bibek.jpg" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #FCB7A4;">
+
+        </div>
+
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #14BC5B;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/9.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #91E0B2;">
+            <div class="text-item">
+                <p class="">Head of Marketing</p>
+                <h4 class="team-title">Md. Sharfuddin <br> Bhuiyan </h4>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #F5CDA3;">
+            <div class="text-item">
+                <p class="">Head, Sales Operations</p>
+                <h4 class="team-title">Mohammad <br> Tanvir Hossain </h4>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/tanvir.jpg" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #EA953C;">
+
+        </div>
+
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #F9663D;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/arif.jpg" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #FCB7A4;">
+            <div class="text-item">
+                <p class="">Head of Corporate Sales</p>
+                <h4 class="team-title">Arif Hossain </h4>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #88B4DD;">
+            <div class="text-item">
+                <p class="">GM, Supply Chain</p>
+                <h4 class="team-title">Touqueer <br> Ahmed Khan </h4>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/12.png" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #015FB6;">
+
+        </div>
+
+
+    </div>
+    <div  class="row member-item" data-aos="fade-up"
+          data-aos-delay="50">
+        <div class="col-md-3 col-3 color-item-3" style=" background-color: #14BC5B;">
+
+        </div>
+        <div class="col-md-3 col-3">
+            <img src="frontend/img/team/syed.jpg" class="w-100" width="100%"/>
+        </div>
+        <div class="col-md-6 col-6 color-item-6" style=" background-color: #91E0B2;">
+            <div class="text-item">
+                <p class="">Marketing Equipment Manager</p>
+                <h4 class="team-title">Syed Raghib <br>
+                    Husain Naqvi</h4>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</section>
+<section class="section blog theme-bg-light-color">
+    <div class="container">
+        <div
+                class="row aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay="50"
+        >
+            <h5 class="title text-center">Also Read</h5>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div
+                            class="card-body blog-card aos-init"
+                            style="
+                  background: linear-gradient(
+                      0deg,
+                      rgba(0, 100, 167, 0.4),
+                      rgba(0, 100, 167, 0.4)
+                    ),
+                    url(frontend/img/blog/11.png), #ffffff;
+                "
+                    >
+                        <h4>Our History</h4>
+
+                        <a href="/our-history" class="btn btn-outline-borderless"
+                        >Explore <img src="frontend/img/icon/arrow.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div
+                            class="card-body blog-card aos-init"
+                            style="
+                  background: linear-gradient(
+                      0deg,
+                      rgba(0, 100, 167, 0.4),
+                      rgba(0, 100, 167, 0.4)
+                    ),
+                    url(frontend/img/blog/2.jpg), #ffffff;
+                "
+                    >
+                        <h4>Reward &amp; Recognition</h4>
+
+                        <a href="/reward-recognition" class="btn btn-outline-borderless"
+                        >Explore <img src="frontend/img/icon/arrow.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div
+                            class="card-body blog-card aos-init"
+                            style="
+                  background: linear-gradient(
+                      0deg,
+                      rgba(0, 100, 167, 0.4),
+                      rgba(0, 100, 167, 0.4)
+                    ),
+                    url(frontend/img/blog/3.png), #ffffff;
+                "
+                    >
+                        <h4>TBL Leadership</h4>
+
+                        <a href="/leadership" class="btn btn-outline-borderless"
+                        >Explore <img src="frontend/img/icon/arrow.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="card">
+                    <div
+                            class="card-body blog-card aos-init"
+                            style="
+                  background: linear-gradient(
+                      0deg,
+                      rgba(0, 100, 167, 0.4),
+                      rgba(0, 100, 167, 0.4)
+                    ),
+                    url(frontend/img/blog/4.png), #ffffff;
+                "
+                    >
+                        <h4>Corporate Social Responsibility</h4>
+
+                        <a
+                                href="/corporate-social-responsibility"
+                                class="btn btn-outline-borderless"
+                        >Explore <img src="frontend/img/icon/arrow.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer section theme-bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <div class="footer-about">
+                    <h4>About the company</h4>
+                    <p>
+                        Transcom Beverage Ltd <br/>
+                        (TBL) is the exclusive <br/>
+                        PepsiCo Franchise for <br/>
+                        Bangladesh
+                    </p>
+
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <img src="frontend/img/icon/twitter.png"/>
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="frontend/img/icon/facebook.png"/>
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="frontend/img/icon/instagram.png"/>
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="frontend/img/icon/linkedin.png"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="footer-end">
+                    <h4>About Us</h4>
+                    <ul class="list-inline">
+                        <li><a href="/our-history"> Our History</a></li>
+                        <li>
+                            <a href="/mission-vision-values"> Vision, Mission & Values</a>
+                        </li>
+                        <li>
+                            <a href="/reward-recognition"> Reward and Recognition</a>
+                        </li>
+                        <li><a href="/leadership"> Leadership</a></li>
+                        <li>
+                            <a href="/corporate-social-responsibility">
+                                Corporate social Responsibility</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="footer-end">
+                    <h4>Sustainability</h4>
+                    <ul class="list-inline">
+                        <li><a href="/care-sustain"> Create Care & Sustain</a></li>
+                        <li><a href="/reuse"> Reuse, Recycle and Reduce</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="footer-end">
+                    <h4>Others</h4>
+                    <ul class="list-inline">
+                        <li><a href="/latest-stories"> Latest Stories</a></li>
+                        <li><a href="/tvc"> TVC</a></li>
+                        <li><a href="/news"> News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="frontend/js/jquery-3.6.0.min.js"></script>
+<script src="frontend/js/bootstrap.min.js"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="frontend/js/popper.min.js"></script>
+
+<!--<script src="frontend/js/video.min.js"></script>
+<script src="frontend/js/Youtube.min.js"></script>-->
+<script src="frontend/js/aos.js"></script>
+
+<script src="frontend/js/main.js"></script>
+</body>
+</html>
