@@ -161,6 +161,33 @@
   .hero-swipe .swiper-pagination {
     bottom: 80px;
   }
+  .team {
+    display: none;
+  }
+  .team-mobile {
+    display: block;
+  }
+  .team-mobile .member-item {
+    min-height: 541px;
+    margin-bottom: 45px;
+  }
+  .team-mobile .member-item .text-item {
+    padding: 20px;
+  }
+  .team-mobile .member-item .text-item p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .team-mobile .member-item .text-item .team-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    color: #ffffff;
+  }
 }
 
 @media only screen and (max-width: 375px) {
