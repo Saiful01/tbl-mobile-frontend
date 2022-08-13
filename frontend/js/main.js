@@ -87,8 +87,9 @@ $(".nav-item").on("mouseleave", function (e) {
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 0) {
     $(".navbar").addClass("fixed-top")
+    $(".mobile-nav").addClass("fixed-top")
   } else {
-    $(".navbar").removeClass("fixed-top")
+    $(".mobile-nav").removeClass("fixed-top")
   }
 })
 
@@ -97,6 +98,7 @@ $("#nav-open").on("click", function (e) {
   e.preventDefault()
   $(".mobile-nav-content").toggleClass("show")
   $("#nav-icon").toggleClass("open")
+  $("body").toggleClass("overflow-hidden")
 })
 
 // Rakib JS for Mobile

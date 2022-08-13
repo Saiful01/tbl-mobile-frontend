@@ -8,6 +8,38 @@
   .mobile-nav-content .mobile-nav-list li .child-menu {
     margin-left: 15px;
   }
+  .mobile-nav.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .mobile-nav .search-container {
+    position: relative;
+  }
+  .mobile-nav .search-container input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+  .mobile-nav .search-container button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+  }
+  .mobile-nav .search-container button img {
+    filter: contrast(0) invert(1);
+  }
+  .mobile-nav-content {
+    height: 100vh;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 768px) {
