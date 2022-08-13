@@ -40,6 +40,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .values-area .carousel-height .carousel-inner {
+    height: auto !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -89,6 +92,10 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .leadership-page,
+  section {
+    overflow-x: hidden;
+  }
   .product-area .btn-outline-primary {
     min-height: 30px;
     position: absolute;
@@ -250,6 +257,29 @@
   .show {
     display: block;
   }
+  .leadership-page .values-area .carousel-caption {
+    top: 0px;
+    padding-top: 80px;
+    left: 0px;
+  }
+  .leadership-page .values-area .leadership-caption {
+    margin-left: 15px;
+  }
+  .leadership-page .values-area .leadership-caption .name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    /* identical to box height, or 40px */
+
+    /* White */
+
+    color: #ffffff;
+  }
+  .leadership-page .values-area .btn-learn-more {
+    position: absolute;
+    top: 840px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -258,5 +288,26 @@
   }
   .btn-learn-more2 {
     bottom: -418px;
+  }
+  .leadership-page .values-area .btn-learn-more {
+    position: absolute;
+    top: 786px;
+  }
+  .carousel-control-prev {
+    left: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 640px;
+  }
+  .leadership-page .values-area .btn-learn-more {
+    position: absolute;
+    top: 665px;
+  }
+  .carousel-control-prev {
+    left: 250px;
   }
 }
