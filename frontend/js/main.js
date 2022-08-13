@@ -115,3 +115,17 @@ if ($(".mobile-product-slider").length > 0) {
     },
   })
 }
+
+// on click mobile-nav-link if has child menu then show child menu else go to link
+$(".mobile-nav-link").on("click", function (e) {
+  e.preventDefault()
+
+  if ($(this).hasClass("has-child-menu")) {
+    $(this)
+      .closest(".mobile-nav-item")
+      .children(".child-menu")
+      .toggleClass("show")
+  } else {
+    window.location.href = $(this).attr("href")
+  }
+})
