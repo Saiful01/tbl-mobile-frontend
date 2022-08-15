@@ -90,6 +90,7 @@ $(window).on("scroll", function () {
     $(".mobile-nav").addClass("fixed-top")
   } else {
     $(".mobile-nav").removeClass("fixed-top")
+    $(".navbar").removeClass("fixed-top")
   }
 })
 
